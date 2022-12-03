@@ -1,0 +1,24 @@
+// sidebar.scss
+
+// Sidebar
+
+.sidebar {
+
+    &__block {
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        &--ms-hidden {
+            display: none;
+        }
+
+        &--ds-visible {
+
+            @media screen and (min-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+}
