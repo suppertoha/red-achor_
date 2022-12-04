@@ -22,27 +22,51 @@
 
                           <div class="menu-mobile">
                             <ul class="menu-mobile__inner">
-                                <li class="menu-mobile__item sorting-button">
-                                    <span class="menu-mobile__icon">
+                                <li class="menu-mobile__item sorting-button" data-target="simpleModal_1" data-toggle="modal">
+                                  <div class="menu-mobile__text pc">
+                                    Якорные цепи и комплектующие
+                                  </div>
+
+                                    <span class="menu-mobile__icon pc">
+                                      <svg>
+                                          <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-red"></use>
+                                      </svg>
+                                    </span>
+
+                                    <span class="menu-mobile__icon mobi">
                                         <svg>
                                             <use href="./assets/images/svg-sprite/svg-sprite.svg#sorting"></use>
                                         </svg>
                                     </span>
-                                    <div class="menu-mobile__text">
-                                        СОртировка
+                                    <div class="menu-mobile__text mobi">
+                                        Сортировка
                                     </div>
                                 </li>
                 
-                                <li class="menu-mobile__item go-js-open-popup" data-target="simpleModal_2" data-toggle="modal">
+                                <li class="menu-mobile__item" data-target="simpleModal_2" data-toggle="modal">
+                                  <div class="menu-mobile__text filters-button pc" >
+                                    Открыть фильтр
+                                </div>
                                     <span class="menu-mobile__icon">
                                         <svg>
                                             <use href="./assets/images/svg-sprite/svg-sprite.svg#filters"></use>
                                         </svg>
                                     </span>
-                                    <div class="menu-mobile__text filters-button" >
+                                    <div class="menu-mobile__text filters-button mobi" >
                                         Фильтры
                                     </div>
                                 </li>
+
+                                <li class="menu-mobile__item pc">
+                                  <div class="menu-mobile__text filters-button" >
+                                      Скачать каталог
+                                  </div>
+                                  <span class="menu-mobile__icon">
+                                    <svg>
+                                        <use href="./assets/images/svg-sprite/svg-sprite.svg#download-catalog"></use>
+                                    </svg>
+                                </span>
+                              </li>
                             </ul>
                           </div>
 
@@ -1008,283 +1032,314 @@
 
                             </div>
 
-                            <button data-target="simpleModal_1" data-toggle="modal">Dismiss modal with a custom button</button>
-                            
-                          </p>
-
+                        </div>
 
                           <div id="simpleModal_1" class="modal">
-                              <div class="modal-window">
-                          <button data-dismiss="modal">Close</button>
-                                  <h3>Dismiss with a custom button</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                              
+                            <div class="parts-list">
+                              <div class="parts-list__inner">
+                                <div class="parts-list__title">
+                                  Якорные цепи и комплектующие
+                                </div>
+                                <div class="parts-list__subtitle">
+                                  Комплектующие якорных цепей
+                                </div>
+                                <ul class="parts-list__items">
+                                  <li class="parts-list__item active">
+                                    Якорные смычки
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Звено общее с контрфорсом якорной цепи
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Звено увеличенное с контрфорсом якорной цепи
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Концевое звено для якорной цепи с контрфорсами
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Звено общее без контрфорса якорной цепи
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Звено увеличенное без контрфорса якорной цепи
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Концевое звено для якорной цепи без контрфорсов
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Звено соединительное (Кентера)
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Скоба концевая
+                                  </li>
+                                  <li class="parts-list__item">
+                                    Вертлюг и вертлюг-скобы
+                                  </li>
+                                </ul>
                               </div>
+                            </div>
                           </div>
+                        
                           <div id="simpleModal_2" class="modal">
-                              <div class="modal-window small">
+                            <div class="filter-mobile">
+                              <form action="#" class="filter">
+                                  <div class="filter__inner">
 
-                                  <div class="filter filter-mobile">
-                                      <form action="#" class="filter">
-                                          <div class="filter__inner">
-
-                                              <div class="filter__close">
-                                                  <div class="filter__close-text">
-                                                      Фильтр
-                                                  </div>
-                                                  <span class="close" data-dismiss="modal">&times;
-                                                    <!--<svg>
-                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#close"></use>
-                                                    </svg>-->
-                                                  </span>
-                                              </div>
-                                              <div class="filter__head bb">
-                                                  <div class="filter__head-title">
-                                                      Материал
-                              
-                                                      <span>
-                                                          <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#question-red"></use>
-                                                          </svg>
-                                                      </span>
-                                                  </div>
-                              
-                                                  <div class="filter__category">
-                                                      <label class="radio">
-                                                      <input type="checkbox" name="toggle" class="radio__input">
-                                                      <span>
-                                                          <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                          </svg>
-                                                      </span>
-                                                      <div class="radio__name">Категория 1 (U1)</div>
-                                                      </label>
-                                                      <label class="radio">
-                                                      <input type="checkbox" name="toggle" class="radio__input">
-                                                      <span>
-                                                          <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                          </svg>
-                                                      </span>
-                                                      <div class="radio__name">Категория 2 (U2)</div>
-                                                      </label>
-                                                      <label class="radio">
-                                                      <input type="checkbox" name="toggle" class="radio__input">
-                                                      <span>
-                                                          <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                          </svg>
-                                                      </span>
-                                                      <div class="radio__name">Категория 3 (U3)</div>
-                                                      </label>
-                                                      <label class="radio">
-                                                      <input type="checkbox" name="toggle" class="radio__input">
-                                                      <span>
-                                                          <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                          </svg>
-                                                      </span>
-                                                      <div class="radio__name">Категория 4 (U4)</div>
-                                                      </label>
-                                                      <label class="radio">
-                                                      <input type="checkbox" name="toggle" class="radio__input">
-                                                      <span>
-                                                          <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                          </svg>
-                                                      </span>
-                                                      <div class="radio__name">Категория 5 (U5)</div>
-                                                      </label>
-                              
-                                                      
-                                                      <div class="catalog-item">
-                                                          <div class="catalog-item__header cat-header">
-                                                          
-                                                          <div class="filter__show-more cat-header__btn go-js-drop-catalog">
-                                                              <b>Показать еще 2 </b>
-                                                              
-                                                              <span>
-                                                                  <svg>
-                                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-red"></use>
-                                                                  </svg>
-                                                              </span>
-                                                          </div>
-                                                          </div>
-                                                          <ul class="sub-catalog catalog-item__sub">
-                                                          <li class="sub-catalog__item">
-                                                              <label class="radio">
-                                                                  <input type="checkbox" name="toggle" class="radio__input">
-                                                                  <span>
-                                                                      <svg>
-                                                                          <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                                      </svg>
-                                                                  </span>
-                                                                  <div class="radio__name">Категория 6 (U6)</div>
-                                                              </label>
-                                                          </li>
-                                                          <li class="sub-catalog__item">
-                                                              <label class="radio">
-                                                                  <input type="checkbox" name="toggle" class="radio__input">
-                                                                  <span>
-                                                                      <svg>
-                                                                          <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
-                                                                      </svg>
-                                                                  </span>
-                                                                  <div class="radio__name">Категория 7 (U7)</div>
-                                                              </label>
-                                                          </li>
-                                                          
-                                                          </ul>
-                                                      </div>
+                                      <div class="filter__close">
+                                          <div class="filter__close-text">
+                                              Фильтр
+                                          </div>
+                                          <span class="close" data-dismiss="modal">&times;
+                                            <!--<svg>
+                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#close"></use>
+                                            </svg>-->
+                                          </span>
+                                      </div>
+                                      <div class="filter__head bb">
+                                          <div class="filter__head-title">
+                                              Материал
+                      
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#question-red"></use>
+                                                  </svg>
+                                              </span>
+                                          </div>
+                      
+                                          <div class="filter__category">
+                                              <label class="radio">
+                                              <input type="checkbox" name="toggle" class="radio__input">
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                              </span>
+                                              <div class="radio__name">Категория 1 (U1)</div>
+                                              </label>
+                                              <label class="radio">
+                                              <input type="checkbox" name="toggle" class="radio__input">
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                              </span>
+                                              <div class="radio__name">Категория 2 (U2)</div>
+                                              </label>
+                                              <label class="radio">
+                                              <input type="checkbox" name="toggle" class="radio__input">
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                              </span>
+                                              <div class="radio__name">Категория 3 (U3)</div>
+                                              </label>
+                                              <label class="radio">
+                                              <input type="checkbox" name="toggle" class="radio__input">
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                              </span>
+                                              <div class="radio__name">Категория 4 (U4)</div>
+                                              </label>
+                                              <label class="radio">
+                                              <input type="checkbox" name="toggle" class="radio__input">
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                              </span>
+                                              <div class="radio__name">Категория 5 (U5)</div>
+                                              </label>
+                      
                                               
-                                                  </div>
-                                              </div>
-                              
-                                              <div class="filter__additional-button bb">
-                                                  <label class="radio">
-                                                      <input type="checkbox" name="button" class="radio__input">
+                                              <div class="catalog-item">
+                                                  <div class="catalog-item__header cat-header">
+                                                  
+                                                  <div class="filter__show-more cat-header__btn go-js-drop-catalog">
+                                                      <b>Показать еще 2 </b>
+                                                      
                                                       <span>
                                                           <svg>
-                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-red"></use>
                                                           </svg>
                                                       </span>
-                                                      <div class="radio__name">Со шплинтом</div>
-                                                  </label>
-                                              </div>
-                              
-                                              <ul class="filter__input">
-                              
-                                                  <li class="filter__input-body bb">
-                                                      <div class="filter__input-title">
-                                                          Калибр цепи, мм
-                                                      </div>
-                              
-                                                      <div class="filter__input-items">
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>от</span>
-                                                                  <input type="number" class="input" placeholder="11">
-                                                              </label>
-                                                          </div>
-                              
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>до</span>
-                                                                  <input type="number" class="input" placeholder="120">
-                                                              </label>
-                                                          </div>
-                                                      </div>
-                                                  
-                                                  </li>
-                              
-                                                  <li class="filter__input-body bb">
-                                                      <div class="filter__input-title">
-                                                          Нагрузка пробная, кн
-                                                      </div>
-                              
-                                                      <div class="filter__input-items">
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>от</span>
-                                                                  <input type="number" class="input" placeholder="11">
-                                                              </label>
-                                                          </div>
-                              
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>до</span>
-                                                                  <input type="number" class="input" placeholder="120">
-                                                              </label>
-                                                          </div>
-                                                      </div>
-                                                  
-                                                  </li>
-                              
-                                                  <li class="filter__input-body bb">
-                                                      <div class="filter__input-title">
-                                                          Нагрузка разрушающая, кн
-                                                      </div>
-                              
-                                                      <div class="filter__input-items">
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>от</span>
-                                                                  <input type="number" class="input" placeholder="11">
-                                                              </label>
-                                                          </div>
-                              
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>до</span>
-                                                                  <input type="number" class="input" placeholder="120">
-                                                              </label>
-                                                          </div>
-                                                      </div>
-                                                  
-                                                  </li>
-                              
-                                                  <li class="filter__input-body">
-                                                      <div class="filter__input-title">
-                                                          Теоретическая масса, кг/м
-                                                      </div>
-                              
-                                                      <div class="filter__input-items">
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>от</span>
-                                                                  <input type="number" class="input" placeholder="11">
-                                                              </label>
-                                                          </div>
-                              
-                                                          <div class="filter__input-item">
-                                                              <label for="">
-                                                                  <span>до</span>
-                                                                  <input type="number" class="input" placeholder="120">
-                                                              </label>
-                                                          </div>
-                                                      </div>
-                                                  
-                                                  </li>
-                                              </ul>
-                              
-                                          
-                                          </div>
-                              
-                                          <div class="filter__button reset">
-                              
-                                              <div class="filter__button-inner">
-                                                  <div class="filter__button-text">
-                                                      сбросить фильтр
                                                   </div>
-                              
-                                                  <div class="filter__button-img">
-                                                      <svg>
-                                                          <use href="./assets/images/svg-sprite/svg-sprite.svg#basket"></use>
-                                                      </svg>
+                                                  </div>
+                                                  <ul class="sub-catalog catalog-item__sub">
+                                                  <li class="sub-catalog__item">
+                                                      <label class="radio">
+                                                          <input type="checkbox" name="toggle" class="radio__input">
+                                                          <span>
+                                                              <svg>
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                              </svg>
+                                                          </span>
+                                                          <div class="radio__name">Категория 6 (U6)</div>
+                                                      </label>
+                                                  </li>
+                                                  <li class="sub-catalog__item">
+                                                      <label class="radio">
+                                                          <input type="checkbox" name="toggle" class="radio__input">
+                                                          <span>
+                                                              <svg>
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                              </svg>
+                                                          </span>
+                                                          <div class="radio__name">Категория 7 (U7)</div>
+                                                      </label>
+                                                  </li>
+                                                  
+                                                  </ul>
+                                              </div>
+                                      
+                                          </div>
+                                      </div>
+                      
+                                      <div class="filter__additional-button bb">
+                                          <label class="radio">
+                                              <input type="checkbox" name="button" class="radio__input">
+                                              <span>
+                                                  <svg>
+                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                              </span>
+                                              <div class="radio__name">Со шплинтом</div>
+                                          </label>
+                                      </div>
+                      
+                                      <ul class="filter__input">
+                      
+                                          <li class="filter__input-body bb">
+                                              <div class="filter__input-title">
+                                                  Калибр цепи, мм
+                                              </div>
+                      
+                                              <div class="filter__input-items">
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>от</span>
+                                                          <input type="number" class="input" placeholder="11">
+                                                      </label>
+                                                  </div>
+                      
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>до</span>
+                                                          <input type="number" class="input" placeholder="120">
+                                                      </label>
                                                   </div>
                                               </div>
                                           
-                                          </div>
-                              
-                                          <div class="filter__button apply">
-                                              <div class="filter__button-img">
-                                                  <svg>
-                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#basket"></use>
-                                                  </svg>
+                                          </li>
+                      
+                                          <li class="filter__input-body bb">
+                                              <div class="filter__input-title">
+                                                  Нагрузка пробная, кн
                                               </div>
-                                              <div class="filter__button-text">
-                                                  Применить фильтр
-                                              </div>
-                                              <div class="filter__button-arrow">
-                                                  <svg>
-                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
-                                                  </svg>
+                      
+                                              <div class="filter__input-items">
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>от</span>
+                                                          <input type="number" class="input" placeholder="11">
+                                                      </label>
+                                                  </div>
+                      
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>до</span>
+                                                          <input type="number" class="input" placeholder="120">
+                                                      </label>
+                                                  </div>
                                               </div>
                                           
-                                          </div>
-                                      </form>
+                                          </li>
+                      
+                                          <li class="filter__input-body bb">
+                                              <div class="filter__input-title">
+                                                  Нагрузка разрушающая, кн
+                                              </div>
+                      
+                                              <div class="filter__input-items">
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>от</span>
+                                                          <input type="number" class="input" placeholder="11">
+                                                      </label>
+                                                  </div>
+                      
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>до</span>
+                                                          <input type="number" class="input" placeholder="120">
+                                                      </label>
+                                                  </div>
+                                              </div>
+                                          
+                                          </li>
+                      
+                                          <li class="filter__input-body">
+                                              <div class="filter__input-title">
+                                                  Теоретическая масса, кг/м
+                                              </div>
+                      
+                                              <div class="filter__input-items">
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>от</span>
+                                                          <input type="number" class="input" placeholder="11">
+                                                      </label>
+                                                  </div>
+                      
+                                                  <div class="filter__input-item">
+                                                      <label for="">
+                                                          <span>до</span>
+                                                          <input type="number" class="input" placeholder="120">
+                                                      </label>
+                                                  </div>
+                                              </div>
+                                          
+                                          </li>
+                                      </ul>
+                      
+                                  
                                   </div>
-                              </div>
+                      
+                                  <div class="filter__button reset">
+                      
+                                      <div class="filter__button-inner">
+                                          <div class="filter__button-text">
+                                              сбросить фильтр
+                                          </div>
+                      
+                                          <div class="filter__button-img">
+                                              <svg>
+                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#basket"></use>
+                                              </svg>
+                                          </div>
+                                      </div>
+                                  
+                                  </div>
+                      
+                                  <div class="filter__button apply">
+                                      <div class="filter__button-img">
+                                          <svg>
+                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#basket"></use>
+                                          </svg>
+                                      </div>
+                                      <div class="filter__button-text">
+                                          Применить фильтр
+                                      </div>
+                                      <div class="filter__button-arrow">
+                                          <svg>
+                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
+                                          </svg>
+                                      </div>
+                                  
+                                  </div>
+                              </form>
+                          </div>
                           </div>
 
                             <!-- Tabs -->

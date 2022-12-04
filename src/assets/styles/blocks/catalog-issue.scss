@@ -262,6 +262,7 @@ input[type='password'] {
 
 .filter{
   background: #F5F5F5;
+  position: relative;
 
   @media screen and (min-width: 1366px) {
       margin-bottom: 32px;
@@ -598,6 +599,29 @@ input[type='password'] {
 
 .menu-mobile{
   
+  .pc{
+    display: none;
+  }
+
+  .mobi{
+    display: flex;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .pc{
+      display: flex;
+    }
+  
+    .mobi{
+      display: none;
+    }
+
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
 
   margin-bottom: 8px;
 
@@ -607,15 +631,15 @@ input[type='password'] {
   }
 
   &__item{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px 16px;
-      background: #F5F5F5;
-      flex-grow: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    background: #F5F5F5;
+    flex-grow: 10;
 
-      position: relative;
-      &:before{
+    position: relative;
+    &:before{
       content: '' ; 
       display: inline-block;
       width: 100%;
@@ -625,12 +649,27 @@ input[type='password'] {
       z-index: 4;
       left: 0px;
       top: 0px;
-      }
+    }
 
+
+    &:first-child{
+      margin-right: 4px;
+
+      @media screen and (min-width: 1024px) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      justify-content: space-between;
+      width: 33%;
+      padding: 24px 32px;
+      margin-left: 2px;
 
       &:first-child{
-          margin-right: 4px;
+        margin-left: 0;
       }
+    }
   }
 
   &__text{
@@ -642,20 +681,39 @@ input[type='password'] {
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #150F0F;
-  }
 
-  span{
-      display: flex;
-      align-items: flex-start;
-      margin-right: 8px;
-      svg{
-          width: 18px;
-          height: 21px;
+      @media screen and (min-width: 1024px) {
+        font-family: 'PF Din Text Cond Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: #150F0F;
+        text-transform: none;
       }
   }
 
-  @media screen and (min-width: 660px) {
-     
+  span{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 8px;
+
+    svg{
+      width: 18px;
+      height: 21px;
+    }
+  }
+
+}
+
+.filter-mobile{
+  width: 100%;
+  height: 100%;
+  margin-top: 84px;
+  @media screen and (min-width: 600px) {
+    max-width: 300px;
+    margin: 116px 16px 32px;
   }
 }
 
@@ -689,7 +747,7 @@ input[type='password'] {
   display: none;
   overflow: auto;
   background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
 
@@ -704,6 +762,7 @@ input[type='password'] {
 
 .modal-window.small {
   width: 100%;
+  max-width: 300px;
 }
 
 .modal-window.large {
@@ -727,14 +786,8 @@ input[type='password'] {
   position: relative;
   background-color: #FFFFFF;
   width: 50%;
-  // margin: 10% auto;
-  // padding: 20px;
 }
 
-.modal-window.small {
-  width: 100%;
-  height: 100%;
-}
 
 .modal-window.large {
   width: 75%;
@@ -763,5 +816,80 @@ input[type='password'] {
   display: block;
 }
 
-//button { padding: 15px; font-size: 12px; background: indianred; color: #FFF; border: none }
-//      .subheading { font-style: italic }
+.parts-list {
+  background: #F5F5F5;
+  max-width: 300px;
+  height: 100%;
+  width: 100%;
+  margin-top: 84px;
+
+  @media screen and (min-width: 600px) {
+    margin-top: 88px;
+    margin: 116px 16px 32px;
+  }
+
+  &__inner {
+
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  &__title {
+    padding: 24px 32px;
+  }
+
+  &__subtitle {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 12px 32px;
+  }
+
+  &__items {
+  }
+
+  &__item {
+    padding: 12px 32px 12px 48px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    position: relative;
+    &:before{
+      content: '' ; 
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      position: absolute;
+      transition: 300ms;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+    }
+
+    &:hover{
+      &:before{
+        background: #DD2B1C;
+      }
+    }
+
+    &.active{
+      position: relative;
+      &:before{
+        content: '' ; 
+        display: inline-block;
+        width: 4px;
+        height: 18px;
+        position: absolute;
+        transition: 300ms;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #DD2B1C;
+
+      }
+    }
+  }
+}
