@@ -1,0 +1,343 @@
+
+.p-list {
+
+  &__header {
+    background-color: #f5f5f5;
+    display: grid;
+    border-bottom: 2px solid rgba(79, 86, 89, 0.1);
+    grid-template-columns: 18% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 167px;
+
+    @media screen and (min-width: 1366px) {
+      grid-template-columns: 19% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 176px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      grid-template-columns: 19% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 193px;
+    }
+  }
+
+  &__head {
+    font-family: 'PF Din Text Cond Pro';
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding: 12px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+
+    span{
+      display: flex;
+      align-items: flex-start;
+
+      svg{
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+      }
+    }
+
+    &:first-child {
+      padding: 16px 32px;
+    }
+
+    
+    @media screen and (min-width: 1366px) {
+      font-size: 12px;
+      line-height: 12px;
+      padding: 12px 8px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      padding: 15px 8px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__dropdown{
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    transition: 300ms;
+    display: grid;
+    border-bottom: 2px solid rgba(79, 86, 89, 0.1);
+    grid-template-columns: 18% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 167px;
+    background-color: #fff;
+
+    @media screen and (min-width: 1366px) {
+      grid-template-columns: 19% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 176px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      grid-template-columns: 19% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 193px;
+    }
+
+    &:hover{
+      background: #F5F5F5;
+    }
+
+    ~&:hover{
+      .p-list__options {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &__item {
+    font-family: 'PF Din Text Cond Pro';
+    display: flex;
+    align-items: center;
+    padding: 20px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+
+    &:first-child {
+      padding: 20px 32px;
+    }
+
+    &:last-child{
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding: 18px 8px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__options {
+    transition: 300ms;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+  }
+
+  &__option {
+    cursor: pointer;
+    height: 100%;
+    padding: 0px 8px;
+    background: #F5F5F5;
+    border-left: 2px solid rgba(79, 86, 89, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    &:before{
+      content: '' ; 
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      background: transparent;
+    }
+  }
+
+  &__button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill:#DD2B1C;
+
+    span{
+      display: flex;
+      align-items: flex-start;
+    }
+
+  }
+
+  &__text {
+    font-family: 'TT Bluescreens';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #150F0F;
+    margin-left: 6px;
+
+    @media screen and (min-width: 1600px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+}
+
+.table-wrapper{
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.p-mobile {
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+
+  &__block {
+    background: #FFFFFF;
+    margin-bottom: 8px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-family: 'PF Din Text Cond Pro';
+    padding: 16px 16px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #150F0F;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 600px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  &__content {
+    padding: 0 16px 16px;
+
+    font-family: 'PF Din Text Cond Pro';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: rgba(79, 86, 89, 0.7);
+    border-bottom: 1px solid #EDEDED;
+
+    @media screen and (min-width: 600px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 8px 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+
+    
+  }
+
+  &__text {
+    display: inline;
+  }
+
+  &__info {
+    color: #150F0F;
+    display: inline;
+  }
+
+  &__options {
+    transition: 300ms;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  &__option {
+    cursor: pointer;
+    height: 100%;
+    flex-grow: 10;
+    padding: 18px 8px;
+    background: #FFFFFF;
+    border-left: 1px solid rgba(79, 86, 89, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child{
+      border-left: none;
+    }
+
+    @media screen and (min-width: 600px) {
+      flex-grow: 0;
+      width: 50%;
+    }
+  }
+
+  &__box{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text-button {
+    font-family: 'TT Bluescreens';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-left: 8px;
+
+    @media screen and (min-width: 600px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill:#DD2B1C;
+
+    span{
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+}
