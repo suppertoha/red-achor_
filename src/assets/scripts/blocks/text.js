@@ -29,6 +29,7 @@ const initText = () => {
     closeTextContent();
     window.addEventListener('resize', closeTextContent);
     textButton.addEventListener('click', (event) => {
+      textContent.classList.toggle('active')
       event.preventDefault();
       if (
         textContent.style.maxHeight == getMaxHeight() + 'px' &&

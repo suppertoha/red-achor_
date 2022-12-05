@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     @@include('./blocks/button-none.js');
   @@include('./blocks/table-header-scroll.js');
   
-  
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
     @@include('./blocks/text.js');
   
 

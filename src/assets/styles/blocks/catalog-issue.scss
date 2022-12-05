@@ -53,7 +53,6 @@
                   line-height: 32px; 
               }
 
-                 
               @media screen and (min-width: 1600px) {
                   font-size: 24px;
                   line-height: 40px;
@@ -970,6 +969,7 @@ input[type='password'] {
   letter-spacing: 0.03em;
   color: rgba(79, 86, 89, 0.7);
   border-top: 1px solid #EDEDED;
+
   .pc{
     display: none;
   }
@@ -977,12 +977,42 @@ input[type='password'] {
   .mobi{
     display: flex;
   }
+  @media screen and (min-width: 600px) {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 40px 0 10px;
+    color: #150F0F;
+
+    .pc{
+      display: block;
+    }
+  
+    .mobi{
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 
   &__inner {
     display: flex;
     align-items: center;
     background: #F5F5F5;
     padding: 10px 20px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0 32px;
+      background: #EDEDED;
+    }
   }
 
 
@@ -1001,12 +1031,64 @@ input[type='password'] {
         height: 16px;
       }
     }
+
+    @media screen and (min-width: 1024px) {
+      padding-bottom: 9px;
+      border-bottom: 2px solid rgba(79, 86, 89, 0.2);
+
+      &:first-child{
+        margin-right: 30px;
+        position: relative;
+        &:before{
+          content: '' ; 
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background: #50575A;
+          border-radius: 50%;
+          position: absolute;
+          right: -16px;
+          top: 5px;
+        }
+      }
+    }
   }
 }
 
 .about-product {
 
+  @media screen and (min-width: 1920px) {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .pc{
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  .mobi{
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
   &__inner {
+
+    @media screen and (min-width: 600px) {
+      padding: 0 16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      padding: 0 48px;
+    }
   }
 
   &__description {
@@ -1019,17 +1101,79 @@ input[type='password'] {
     line-height: 44px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 600px) {
+      font-size: 64px;
+      line-height: 64px;
+      padding: 24px 0px 16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: 0.04em;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 1366px) {
+      font-size: 104px;
+      line-height: 104px;
+    }
+  }
+
+  .description__content{
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #EDEDED 100%);
+      height: 64px;
+    }
+
+    &.active{
+      &::after{
+        display: none;
+      }
+    }
   }
 
   &__images {
     background: #FFFFFF;
-    padding: 16px;
+    padding: 36px 16px;
     display: flex;
     align-items: flex-start;
     width: 100%;
+    max-height: 300px;
+
     img{
       width: 100%;
       object-fit: cover;
+    }
+
+    figure{
+      width: 100%;
+    }
+
+    @media screen and (min-width: 600px) {
+      padding: 84px 16px;
+
+    }
+
+    @media screen and (min-width: 1024px) {
+      min-width: 413px;
+      padding: 0;
+      margin-left: 51px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      min-width: 556px;
+
+      .pc{
+        display: none;
+      }
     }
   }
 
@@ -1042,6 +1186,8 @@ input[type='password'] {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #150F0F;
+    position: relative;
+
 
     .description--light{
       background: #EDEDED;
@@ -1053,7 +1199,50 @@ input[type='password'] {
         
       }
     }
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 65px;
+    }
   
+  }
+}
+
+.swiper-product{
+  display: none;
+
+  span{
+    display: flex;
+    align-items: flex-start;
+    svg{
+      width: 28px;
+      height: 24px;
+    }
+  }
+
+  &__slide{
+    top: 50%;
+  }
+
+  &__prew{
+    transform: rotate(-180deg);
+    right: 60px;
+    bottom: 40px;
+    top: auto;
+    left: auto;
+    &::after{
+      display: none;
+    }
+  }
+
+  &__next{
+    &::after{
+      display: none;
+    }
+  }
+
+
+  @media screen and (min-width: 1366px) {
+    display: block;
   }
 }
 
