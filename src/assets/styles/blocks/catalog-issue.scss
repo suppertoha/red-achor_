@@ -88,7 +88,6 @@
           overflow: scroll;
       }
   }
-
   
   .text-dropdown{
       font-size: 18px;
@@ -116,6 +115,22 @@
 
       font-size: 24px;
       line-height: 40px;
+  }
+
+  .tabs{
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 130px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      margin-bottom: 160px;
+    }
   }
 
 }
@@ -840,7 +855,6 @@ input[type='password'] {
   background-color: #FFFFFF;
   width: 50%;
 }
-
 
 .modal-window.large {
   width: 75%;

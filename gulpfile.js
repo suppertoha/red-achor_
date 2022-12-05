@@ -113,9 +113,9 @@ const images = () => {
     gulp.src([
         srcFolder + '/assets/images/**/*.{jpeg,jpg,png,gif}',
     ])
-    // .pipe(gulpWEBP({
-    //     quality: 70,
-    // }))
+     .pipe(gulpWEBP({
+         quality: 70,
+     }))
     .pipe(gulp.dest(distFolder + '/assets/images/'))
     return gulp.src([
         srcFolder + '/assets/images/**/*.{jpeg,jpg,png,gif,svg}',
