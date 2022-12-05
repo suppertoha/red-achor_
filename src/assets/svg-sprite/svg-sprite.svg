@@ -127,10 +127,9 @@
     <path d="M1 4.25L5.5 8.75L13 1.25" stroke="#DD2B1C" stroke-width="2" />
   </symbol>
 
-  <symbol id='arrow-red' viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id='arrow-red' viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-      d="M5.99482 7.41133L1.10651 2.52301L0.0427611 3.58676L4.93108 8.47507L4.93059 8.47556L5.99125 9.53622L5.99174 9.53573L5.99998 9.54397L7.06372 8.48022L7.05548 8.47199L11.9654 3.56207L10.9047 2.50141L5.99482 7.41133Z"
-      fill="#DD2B1C" />
+      d="M5.99482 7.41133L1.10651 2.52301L0.0427611 3.58676L4.93108 8.47507L4.93059 8.47556L5.99125 9.53622L5.99174 9.53573L5.99998 9.54397L7.06372 8.48022L7.05548 8.47199L11.9654 3.56207L10.9047 2.50141L5.99482 7.41133Z" />
   </symbol>
 
   <symbol id='basket' viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,30 +140,32 @@
       fill="#4F5659" fill-opacity="0.4" />
   </symbol>
 
-  <symbol id='sorting' viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M7.50015 0H17.5002V2H7.50015V0Z" fill="#DD2B1C" />
-    <path d="M7.50015 4H15.5002V6H7.50015V4Z" fill="#DD2B1C" />
-    <path d="M7.50015 8V10H13.5002V8H7.50015Z" fill="#DD2B1C" />
+  <symbol id='sorting' viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.50015 0H17.5002V2H7.50015V0Z" />
+    <path d="M7.50015 4H15.5002V6H7.50015V4Z" />
+    <path d="M7.50015 8V10H13.5002V8H7.50015Z" />
     <path
-      d="M7.50015 11.5858L5.50015 13.5858V0H3.50015V13.5858L1.50015 11.5858L0.0859375 13L4.50015 17.4142L8.91436 13L7.50015 11.5858Z"
-      fill="#DD2B1C" />
+      d="M7.50015 11.5858L5.50015 13.5858V0H3.50015V13.5858L1.50015 11.5858L0.0859375 13L4.50015 17.4142L8.91436 13L7.50015 11.5858Z" />
   </symbol>
 
-  <symbol id='filters' viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id='filters' viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-      d="M0 0.299805V5.68641L6 12.2864V21.666L8.49285 20.1703L12 18.2998V12.2864L18 5.68641V0.299805H0ZM10 17.0998L8 18.1665V11.5132L2.35146 5.2998H15.6485L10 11.5132V17.0998ZM16 3.2998H2V2.2998H16V3.2998Z"
-      fill="#DD2B1C" />
+      d="M0 0.299805V5.68641L6 12.2864V21.666L8.49285 20.1703L12 18.2998V12.2864L18 5.68641V0.299805H0ZM10 17.0998L8 18.1665V11.5132L2.35146 5.2998H15.6485L10 11.5132V17.0998ZM16 3.2998H2V2.2998H16V3.2998Z" />
+
   </symbol>
 
 
-  <symbol id='close' viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id='close' viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path d="M13.6564 13.6566L2.3427 2.34285" stroke="#110101" stroke-width="2" stroke-linecap="square" />
     <path d="M13.6573 2.34285L2.34359 13.6566" stroke="#110101" stroke-width="2" stroke-linecap="square" />
   </symbol>
 
-  <symbol id='download-catalog' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16V24H22L2 24H0L0 22L0 16H2L2 22L22 22V16H24Z" fill="#4F5659" fill-opacity="0.4"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0002 15.0858L13.0001 2.5H11.0001L11.0002 15.0858L5.20726 9.29289L4.50015 8.58579L3.08594 10L3.79304 10.7071L11.293 18.2071L12.0002 18.9142L12.7073 18.2071L20.2073 10.7071L20.9144 10L19.5001 8.58578L18.793 9.29289L13.0002 15.0858Z" fill="#4F5659" fill-opacity="0.4"/>
+  <symbol id='download-catalog' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16V24H22L2 24H0L0 22L0 16H2L2 22L22 22V16H24Z" fill="#4F5659"
+      fill-opacity="0.4" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M13.0002 15.0858L13.0001 2.5H11.0001L11.0002 15.0858L5.20726 9.29289L4.50015 8.58579L3.08594 10L3.79304 10.7071L11.293 18.2071L12.0002 18.9142L12.7073 18.2071L20.2073 10.7071L20.9144 10L19.5001 8.58578L18.793 9.29289L13.0002 15.0858Z"
+      fill="#4F5659" fill-opacity="0.4" />
   </symbol>
 
 
