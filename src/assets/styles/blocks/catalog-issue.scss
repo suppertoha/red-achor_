@@ -962,12 +962,27 @@ input[type='password'] {
 }
 
 .site-navigation {
+  font-family: 'PF Din Text Cond Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(79, 86, 89, 0.7);
+  border-top: 1px solid #EDEDED;
+  .pc{
+    display: none;
+  }
+
+  .mobi{
+    display: flex;
+  }
 
   &__inner {
     display: flex;
     align-items: center;
     background: #F5F5F5;
-    padding: 10px 0;
+    padding: 10px 20px;
   }
 
 
@@ -978,6 +993,7 @@ input[type='password'] {
     span{
       display: flex;
       align-items: flex-start;
+      margin-right: 8px;
 
       svg{
         fill:rgba(79, 86, 89, 0.4);
@@ -995,7 +1011,7 @@ input[type='password'] {
 
   &__description {
     background: #EDEDED;
-    padding: 14px 0 16px;
+    padding: 14px 16px 16px;
     font-family: 'TT Bluescreens';
     font-style: normal;
     font-weight: 700;
@@ -1006,9 +1022,38 @@ input[type='password'] {
   }
 
   &__images {
+    background: #FFFFFF;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__text {
+    margin-bottom: 25px;
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #150F0F;
+
+    .description--light{
+      background: #EDEDED;
+    }
+
+    .sub-catalog {
+    
+      &__item {
+        
+      }
+    }
+  
   }
 }
 

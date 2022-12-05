@@ -16,43 +16,84 @@
             <main class="page__main main">
 
                 <div class="page__section">
+                    <!-- site-navigation -->
+                    <div class="site-navigation">
+                      <ul class="site-navigation__inner">
+                        <li class="site-navigation__list pc">
+                          Продукция
+                        </li>
+                        <li class="site-navigation__list mobi">
+                          <span>
+                            <svg>
+                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow"></use>
+                            </svg>
+                          </span>
+                          Якорные смычки
+                        </li>
+
+                        <li class="site-navigation__list pc">
+                          <span>
+                            <svg>
+                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow"></use>
+                            </svg>
+                          </span>
+                          <span>
+                            Якорные цепи и комплектующие
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- about-product -->
+                    <div class="about-product">
+                      <div class="about-product__inner">
+                        <div class="about-product__description">
+                          Цепи без распорок для крепления отбойных устройств причальных сооружений
+                        </div>
+                        <div class="about-product__images">
+                          <figure>
+                            <img class="sub-category__image" src="./assets/images/content/about-product/about-product1.png" alt="Alt Text">
+                          </figure>
+                        </div>
+                      </div>
+
+                      <div class="about-product__text">
+                        <div class="description description--light text" data-max-lines="8">
+                          <div class="description__container text-dropdown">
+                            <div class="sub-categories-head__description text js-text" data-max-lines="5">
+                              <div class="description__content text__content js-text__content ui-color-black-100">
+                                <p class="pc">
+                                  Предназначена для комплектации якорных канатов, бриделей, цепных строп, устройств отбойных сооружений, упряжек ковшовых экскаваторов. Предназначена для комплектации якорных канатов
+                  
+                                </p>
+                  
+                                <p>
+                                  Предназначена для комплектации якорных канатов, бриделей, цепных строп, устройств отбойных сооружений, упряжек ковшовых экскаваторов. Предназначена для комплектации якорных канатов
+                                </p>
+                              </div>
+                  
+                              <button
+                                class="sub-categories-head__more-button text__more-button js-text__more-button pointer more-button brief brief--medium brief--ms-14 brief--ts-16 brief--dl-20 ui-color-red-100"
+                                type="button"
+                                data-opening-text="Подробнее"
+                                data-closing-text="Свернуть"
+                              >
+                                Подробнее
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- / site-navigation -->
                     <div class="page__container">
 
                         <div class="page__box">
-                          <!-- site-navigation -->
-                            <div class="site-navigation">
-                              <ul class="site-navigation__inner">
-                                <li class="site-navigation__list">
-                                  Продукция
-                                </li>
-                                <li class="site-navigation__list">
-                                  <span>
-                                    <svg>
-                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow"></use>
-                                    </svg>
-                                  </span>
-                                  <span>
-                                    Якорные цепи и комплектующие
-                                  </span>
-                                </li>
-                              </ul>
-                            </div>
+                        
 
-                            <div class="about-product">
-                              <div class="about-product__inner">
-                                <div class="about-product__description">
-                                  Цепи без распорок для крепления отбойных устройств причальных сооружений
-                                </div>
-                                <div class="about-product__images">
+                        
+                          <!-- about-product -->
 
-                                </div>
-                              </div>
-
-                              <div class="about-product__text">
-
-                              </div>
-                            </div>
-                          <!-- / site-navigation -->
                           <!-- menu-mobile -->
                           @@include('./assets/block-mixin/_menu-mobile.html')
 
@@ -152,9 +193,9 @@
                               <div class="page__container">
 
                                       <div class="page__box addition__title-box">
-                                              <h2 class="title title--ms-44 title--ts-60 title--ds-80 title--dl-104 ui-color-black-100">
-                                                другая продукция
-                                              </h2>
+                                        <h2 class="title title--ms-44 title--ts-60 title--ds-80 title--dl-104 ui-color-black-100">
+                                          другая продукция
+                                        </h2>
                                       </div>
 
                                       <div class="page__box page__box--offset">
@@ -162,31 +203,31 @@
                                               <div class="page__row page__row--ms-1 page__row--ts-2 cards sub-categories">
 
                                                       <article class="page__col cards__item sub-categories__item">
-                                                              <a class="cards__card sub-category ui-background-white-100" href="#">
-                                                                      <figure class="sub-category__picture">
-                                                                              <img class="sub-category__image" src="./assets/images/content/sub-category/img-sub-category-1.png" alt="Alt Text">
-                                                                      </figure>
-                                                                      <h2 class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100">
-                                                                        Смычка промежуточная якорной цепи с контрфорсами
-                                                                      </h2>
-                                                                      <svg class="sub-category__icon">
-                                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
-                                                                      </svg>
-                                                              </a>
+                                                        <a class="cards__card sub-category ui-background-white-100" href="#">
+                                                                <figure class="sub-category__picture">
+                                                                        <img class="sub-category__image" src="./assets/images/content/sub-category/img-sub-category-1.png" alt="Alt Text">
+                                                                </figure>
+                                                                <h2 class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100">
+                                                                  Смычка промежуточная якорной цепи с контрфорсами
+                                                                </h2>
+                                                                <svg class="sub-category__icon">
+                                                                        <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
+                                                                </svg>
+                                                        </a>
                                                       </article>
 
                                                       <article class="page__col cards__item sub-categories__item">
-                                                              <a class="cards__card sub-category ui-background-white-100" href="#">
-                                                                      <figure class="sub-category__picture">
-                                                                              <img class="sub-category__image" src="./assets/images/content/sub-category/img-sub-category-2.png" alt="Alt Text">
-                                                                      </figure>
-                                                                      <h2 class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100">
-                                                                        Звено соединительное
-                                                                      </h2>
-                                                                      <svg class="sub-category__icon">
-                                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
-                                                                      </svg>
-                                                              </a>
+                                                        <a class="cards__card sub-category ui-background-white-100" href="#">
+                                                          <figure class="sub-category__picture">
+                                                                  <img class="sub-category__image" src="./assets/images/content/sub-category/img-sub-category-2.png" alt="Alt Text">
+                                                          </figure>
+                                                          <h2 class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100">
+                                                            Звено соединительное
+                                                          </h2>
+                                                          <svg class="sub-category__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
+                                                          </svg>
+                                                        </a>
                                                       </article>
 
                                                       <article class="page__col cards__item sub-categories__item">
