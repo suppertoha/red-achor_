@@ -960,3 +960,56 @@ input[type='password'] {
     }
   }
 }
+
+.site-navigation {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+    padding: 10px 0;
+  }
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    span{
+      display: flex;
+      align-items: flex-start;
+
+      svg{
+        fill:rgba(79, 86, 89, 0.4);
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.about-product {
+
+  &__inner {
+  }
+
+  &__description {
+    background: #EDEDED;
+    padding: 14px 0 16px;
+    font-family: 'TT Bluescreens';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__images {
+  }
+
+  &__text {
+  }
+}
+
+
