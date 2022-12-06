@@ -428,8 +428,150 @@
     
     }
   }
+
+  .p-list {
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(79, 86, 89, 0.1);
+
+    &__item{
+      &:last-child{
+        transition: 300ms;
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+          display: flex;
+          opacity: 0;
+        }
+      }
+
+      &:first-child{
+        flex-grow: 10;
+      }
+
+      font-family: 'PF Din Text Cond Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+
+    }
+
+    &__options{
+      opacity: 1;
+    }
+  }
   
 }
+
+.other-products {
+  margin-bottom: 40px;
+
+  .mobi{
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .pc{
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__inner {
+  }
+
+  &__title{
+    font-family: 'TT Bluescreens';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #150F0F;
+    margin-bottom: 16px;
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__item {
+  
+
+    &:nth-child(n+5){
+      display: none;
+    }
+  }
+
+  &__description {
+    display: flex;
+
+    &:hover{
+      .p-list__item{
+        &:last-child{
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+
+  &__buttons {
+  }
+}
+
+.p-list {
+
+  &__item {
+  }
+
+  &__options {
+  }
+
+  &__option {
+  }
+
+  &__button {
+  }
+
+  &__box {
+  }
+
+  &__icon {
+  }
+
+  &__text {
+  }
+}
+.p-mobile {
+
+  &__options {
+  }
+
+  &__option {
+  }
+
+  &__button {
+  }
+
+  &__box {
+  }
+
+  &__icon {
+  }
+
+  &__text-button {
+  }
+}
+
 
 
 
