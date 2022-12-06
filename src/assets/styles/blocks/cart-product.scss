@@ -1,0 +1,204 @@
+/**/
+/* block-wrapper */
+//! block-wrapper
+
+.block-wrapper{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  background: #ededed;
+}
+
+/* cart-product */
+//! cart-product
+.cart-product {
+  /* about-product */
+  //? about-product
+  .about-product {
+    &__description {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.03em;
+      padding: 0 16px;
+
+      span {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      @media screen and (min-width: 600px) {
+        font-size: 56px;
+        line-height: 56px;
+
+        span{
+          display: none;
+        }
+      }
+    }
+
+    &__images {
+      position: relative;
+      padding: 16px;
+      height: 144px;
+
+      @media screen and (min-width: 600px) {
+        height: 256px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  /* description */
+  //? description
+  .description{
+    margin-top: 0;
+    &__container{
+      padding: 0 16px;
+    }
+
+    p{
+      margin-top: 0;
+    }
+  }
+
+  /* swiper-product */
+  //? swiper-product
+  .swiper-product {
+    display: block;
+
+    &__slide {
+      height: inherit;
+      height: 88px;
+      span {
+        height: inherit;
+
+        picture {
+          height: inherit;
+          padding: 0;
+        }
+      }
+
+      img {
+        height: 100%;
+      }
+
+      .mobi2{
+        display: none;
+      }
+
+      @media screen and (min-width: 600px) {
+        .mobi1{
+          display: none;
+        }
+        .mobi2{
+          display: flex;
+        }
+
+      }
+    }
+
+    &__next,
+    &__prev {
+      right: auto;
+      bottom: 0px;
+      span {
+        display: flex;
+        align-items: flex-start;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    &__next {
+      left: 46px;
+    }
+
+    &__prev {
+      left: 18px;
+    }
+  }
+
+  /* quick-order */
+  //! quick-order
+  .quick-order {
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+  
+}
+
+/* quick-order */
+//! quick-order
+.quick-order {
+  display: block;
+  padding: 18px 16px 0px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #CDCFCF;
+
+  }
+
+  &__title {
+    font-family: 'TT Bluescreens';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DD2B1C;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: flex-start;
+    fill:#CDCFCF;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* print */
+//! print
+.print {
+  display: block;
+  padding: 0 16px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__images {
+    width: 20px;
+    height: 20px;
+    fill:rgba(79, 86, 89, 0.4);
+    margin-right: 8px;
+  }
+
+  &__title {
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(79, 86, 89, 0.7);
+  }
+}
+
+
+
+

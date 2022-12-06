@@ -1,0 +1,21 @@
+@@include('./assets/templates/template-header.html', { 'lang': 'ru', 'title': 'Red Anchor | Все категории' })
+
+<div class="cart-product block-wrapper">
+  <main class="main">
+    @@include('./assets/templates/header.html')
+    <!--site-navigation-->
+    @@include('./assets/block-mixin/3.7.cart-product/_site-navigation.html')
+
+    <!--print-->
+    @@include('./assets/block-mixin/3.7.cart-product/_print.html')
+
+    <!--about-product-->
+    @@include('./assets/block-mixin/3.7.cart-product/_about-product.html')
+
+  </main>
+  
+</div>
+
+<!-- footer-black -->
+@@include('./assets/block-mixin/_footer-black.html')
+@@include('./assets/templates/template-footer.html')
