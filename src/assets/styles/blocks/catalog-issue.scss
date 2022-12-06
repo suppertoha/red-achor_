@@ -970,6 +970,11 @@ input[type='password'] {
   color: rgba(79, 86, 89, 0.7);
   border-top: 1px solid #EDEDED;
 
+  @media screen and (min-width: 1920px) {
+    max-width: 1920px;
+    margin: 40px auto 16px;
+  }
+
   .pc{
     display: none;
   }
@@ -1013,6 +1018,11 @@ input[type='password'] {
       padding: 0 32px;
       background: #EDEDED;
     }
+
+    @media screen and (min-width: 1600px) {
+      padding: 0 48px;
+    }
+
   }
 
 
@@ -1235,6 +1245,10 @@ input[type='password'] {
       img{
         height: 100%;
         width: 100%;
+
+        @media screen and (min-width: 1600px) {
+          height: 350px;
+        }
       }
     }
     top: 50%;

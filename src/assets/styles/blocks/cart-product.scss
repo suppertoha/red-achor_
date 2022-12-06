@@ -1,7 +1,27 @@
 /**/
+/* container */
+//! container
+.container{
+  padding: 0 16px;
+  width: 100%;
+  max-width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 0 48px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
 /* block-wrapper */
 //! block-wrapper
-
 .block-wrapper{
   position: relative;
   overflow: hidden;
@@ -26,6 +46,11 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #CDCFCF;
 
+    @media screen and (min-width: 1024px) {
+      border-bottom: 3px solid #CDCFCF;
+      width: 50%;
+    }
+
   }
 
   &__title {
@@ -39,9 +64,19 @@
     color: #DD2B1C;
 
     @media screen and (min-width: 1024px) {
+      font-size: 36px;
+      line-height: 36px;
+
+    }
+
+    @media screen and (min-width: 1366px) {
+      font-size: 44px;
+      line-height: 44px;
+    }
+
+    @media screen and (min-width: 1600px) {
       font-size: 60px;
       line-height: 60px;
-      letter-spacing: 0.05em;
     }
   }
 
@@ -51,6 +86,16 @@
     fill:#CDCFCF;
     width: 16px;
     height: 16px;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1600px) {
+      display: flex;
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
@@ -114,6 +159,20 @@
       @media screen and (min-width: 1024px) {
         margin-bottom: 24px;
       }
+
+      @media screen and (min-width: 1366px) {
+        font-size: 64px;
+        line-height: 64px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        font-size: 80px;
+        line-height: 80px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        max-width: 930px;
+      }
     }
 
     &__images {
@@ -132,6 +191,31 @@
         height: 296px;
         margin-left: 65px;
         padding: 0;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      @media screen and (min-width: 1366px) {
+        img{
+          height: 344px;
+        }
+        height: 344px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        width: 653px;
+        height: 440px;
+        flex-shrink: 0;
+
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 1920px) {
+        width: 773px;
+        height: 456px;
       }
     }
 
@@ -162,6 +246,10 @@
     margin-top: 0;
     &__container{
       padding: 0 16px;
+
+      @media screen and (min-width: 1024px) {
+        margin: 0;
+      }
     }
 
     p{
@@ -227,7 +315,13 @@
           height: 16px;
         }
       }
+
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+
       @media screen and (min-width: 1024px) {
+        display: flex;
         left: auto;
         bottom: 10px;
         left: auto;
@@ -239,6 +333,14 @@
           }
         }
     
+      }
+
+      @media screen and (min-width: 1366px) {
+        bottom: -20px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        display: none;
       }
     }
 
@@ -260,8 +362,6 @@
 
   /* quick-order */
   //? quick-order 
-
-  //! quick-order
   .quick-order {
     @media screen and (min-width: 600px) {
       &.mobi{
@@ -277,7 +377,7 @@
   }
 
   /* print */
-  //! print
+  //? print
   .print{
     padding: 16px 16px 8px;
 
@@ -286,8 +386,47 @@
     }
   }
 
+  /* sub-categories-head__description */
+  //? sub-categories-head__description
   .sub-categories-head__description{
     margin-left: 0;
+  }
+
+  /* tabs */
+  //? tabs
+  .tabs{
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 130px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      margin-bottom: 160px;
+    }
+  }
+
+    /* addition */
+  //? addition
+  .addition{
+    article{
+      &:last-child{
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+          display: flex;
+        }
+
+        @media screen and (min-width: 1600px) {
+          display: none;
+        }
+      }
+    
+    }
   }
   
 }
