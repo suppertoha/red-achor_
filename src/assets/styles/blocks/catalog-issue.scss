@@ -1,25 +1,9 @@
-.sub-catalog{
-  max-height: 0;
-  overflow: hidden;
-  transition: 800ms; 
-}
-
-.catalog-item{
-  position: relative;
-  // margin-top: 24px;
-}
-
-.cat-header{
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-
-  @media screen and (min-width: 1600px) {
-    bottom: -35px;
-  }
-}
-
+/*catalog-issue*/
+//! catalog-issue
 .catalog-issue{
+
+  /*page__row*/
+  //? page__row
   .page__row{
 
       margin-bottom: 16px;
@@ -33,14 +17,20 @@
       }
   }
 
+  /*description__more-button*/
+  //? description__more-button
   .description__more-button{
       margin-top: 0;
   }
 
+  /*description__container*/
+  //? description__container
   .description__container{
       padding: 40px 0;
   }
 
+  /*description*/
+  //? description
   .description {
 
       &__content {
@@ -88,6 +78,8 @@
       }
   }
   
+  /*text-dropdown*/
+  //? text-dropdown
   .text-dropdown{
       font-size: 18px;
       line-height: 28px;
@@ -116,6 +108,8 @@
       line-height: 40px;
   }
 
+  /*tabs*/
+  //? tabs
   .tabs{
     margin-bottom: 40px;
 
@@ -132,8 +126,63 @@
     }
   }
 
+  /*about-product*/
+  //? about-product
+  .about-product{
+    &__description{
+      margin-bottom: 16px;
+    }
+
+
+  }
+
+  /*site-navigation*/
+  //? site-navigation
+  .site-navigation{
+    margin: 4px 0 14px;
+
+    @media screen and (min-width: 600px) {
+      margin: 4px 0 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin: 40px 0 10px;
+    }
+  }
+
+
 }
 
+
+/*sub-catalog*/
+//! sub-catalog
+.sub-catalog{
+  max-height: 0;
+  overflow: hidden;
+  transition: 800ms; 
+}
+
+/*catalog-item*/
+//! catalog-item
+.catalog-item{
+  position: relative;
+  // margin-top: 24px;
+}
+
+/*cat-header*/
+//! cat-header
+.cat-header{
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+
+  @media screen and (min-width: 1600px) {
+    bottom: -35px;
+  }
+}
+
+/*properties-table*/
+//! properties-table
 .properties-table{
   background: #F5F5F5;
   padding: 16px;
@@ -277,7 +326,8 @@ input[type='password'] {
   }
 }
 
-
+/*filter*/
+//! filter
 .filter{
   background: #F5F5F5;
   position: relative;
@@ -659,6 +709,8 @@ input[type='password'] {
 
 }
 
+/*menu-mobile*/
+//! menu-mobile
 .menu-mobile{
   
   .pc{
@@ -774,6 +826,8 @@ input[type='password'] {
 
 }
 
+/*filter-mobile*/
+//! filter-mobile
 .filter-mobile{
   width: 100%;
   height: 100%;
@@ -784,6 +838,8 @@ input[type='password'] {
   }
 }
 
+/*body__popup*/
+//! body__popup
 .body__popup {
   display: none;
   position: fixed;
@@ -805,6 +861,8 @@ input[type='password'] {
   }
 }
 
+/*modal*/
+//! modal
 .modal {
   position: fixed;
   top: 0;
@@ -818,13 +876,13 @@ input[type='password'] {
   z-index: 9999;
 }
 
+/*modal-window*/
+//! modal-window
 .modal-window {
   position: relative;
   background-color: #FFFFFF;
   width: 50%;
   margin-top: 85px;
-  // margin: 10% auto;
-  // padding: 20px;
 }
 
 .modal-window.small {
@@ -882,6 +940,8 @@ input[type='password'] {
   display: block;
 }
 
+/*parts-list*/
+//! parts-list
 .parts-list {
   background: #F5F5F5;
   max-width: 300px;
@@ -960,6 +1020,8 @@ input[type='password'] {
   }
 }
 
+/*site-navigation*/
+//! site-navigation
 .site-navigation {
   font-family: 'PF Din Text Cond Pro';
   font-style: normal;
@@ -1065,6 +1127,8 @@ input[type='password'] {
   }
 }
 
+/*about-product*/
+//! about-product
 .about-product {
 
   @media screen and (min-width: 1920px) {
@@ -1152,7 +1216,7 @@ input[type='password'] {
 
   &__images {
     background: #FFFFFF;
-    padding: 36px 16px;
+    //padding: 36px 16px;
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -1167,14 +1231,14 @@ input[type='password'] {
       width: 100%;
     }
 
-    @media screen and (min-width: 600px) {
-      padding: 84px 16px;
+    //@media screen and (min-width: 600px) {
+    //  padding: 84px 16px;
 
-    }
+    //}
 
     @media screen and (min-width: 1024px) {
       min-width: 413px;
-      padding: 0;
+      //padding: 0;
       margin-left: 51px;
     }
 
@@ -1217,6 +1281,8 @@ input[type='password'] {
   }
 }
 
+/*swiper-product*/
+//! swiper-product
 .swiper-product{
   display: none;
 
