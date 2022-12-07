@@ -1,0 +1,138 @@
+/*common-styles*/
+//! common-styles
+.common-styles{
+
+  /*site-navigation*/
+  //? site-navigation
+  .site-navigation{
+    margin: 4px 0 14px;
+
+    @media screen and (min-width: 600px) {
+      margin: 4px 0 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin: 40px 0 24px;
+    }
+  }
+
+
+  /*about-product*/
+  //? about-product
+  .about-product{
+    &__inner{
+      justify-content: space-between;
+    }
+
+    &__description{
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 44px;
+      letter-spacing: 0.03em;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: 600px) {
+        font-size: 64px;
+        line-height: 64px;
+      }
+
+      @media screen and (min-width: 1366px) {
+        font-size: 80px;
+        line-height: 80px;
+      }
+    }
+  }
+
+  /*about-product*/
+  //? about-product
+  .about-product__text{
+    .sub-categories-head__description{
+      margin: 0;
+    }
+
+    p{
+      margin-top: 0;
+    }
+  }
+
+}
+
+/*catalog-output*/
+// !catalog-output
+.catalog-output{
+
+  /*about-product__images*/
+  //? about-product__images
+  .about-product__images{
+
+    @media screen and (min-width: 1366px) {
+      margin-left: 110px;
+    }
+  }
+
+
+  /*information-wrapper*/
+  //? information-wrapper
+  .information-wrapper{
+
+    &.mobi{
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+
+    margin-bottom: 8px;
+    .information{
+      margin-bottom: 0;
+
+      &__text{
+        margin-right: 50px;
+      }
+    }
+  }
+
+  /*help-wrap*/
+  //? help-wrap
+  .help-wrap{
+    margin-bottom: 40px;
+  }
+
+  
+  /*help-wrap*/
+  //? help-wrap
+  .tabs-container{
+    margin-bottom: 40px;
+  }
+}
+
+/*container-product*/
+// !container-product
+.container-product{
+  margin-bottom: 40px;
+
+  .mobi{
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__sidebar{
+    display: none;
+  }
+
+  .main__layout{
+    margin-bottom: 0;
+  }
+
+  .container-product__navigation{
+    margin-bottom: 16px;
+  }
+
+  .file__box{
+    p{
+      padding-right: 40px;
+    }
+  }
+
+}
+
