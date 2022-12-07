@@ -3,11 +3,15 @@
 <div class="cart-product block-wrapper page">
   <main class="main">
     @@include('./assets/templates/header.html')
-    <!--site-navigation-->
-    @@include('./assets/block-mixin/3.7.cart-product/_site-navigation.html')
 
-    <!--print-->
-    @@include('./assets/block-mixin/3.7.cart-product/_print.html')
+    <!-- nav-wrap -->
+    <div class="nav-wrap">
+      <!--site-navigation-->
+      @@include('./assets/block-mixin/3.7.cart-product/_site-navigation.html')
+
+      <!--print-->
+      @@include('./assets/block-mixin/3.7.cart-product/_print.html')
+    </div>
 
     <!--about-product-->
     @@include('./assets/block-mixin/3.7.cart-product/_about-product.html')
