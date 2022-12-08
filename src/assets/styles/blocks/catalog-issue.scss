@@ -161,6 +161,8 @@
     }
   }
 
+  /*sidebar__block--ms-hidden*/
+  //? sidebar__block--ms-hidden
   .sidebar__block--ms-hidden{
     display: block;
     height: 100%;
@@ -250,6 +252,14 @@
     }
   }
 
+  /*information-wrapper*/
+  //? information-wrapper
+  .information-wrapper{
+    display: none;
+    @media screen and (min-width: 1366px) {
+      display: block;
+    }
+  }
 }
 
 
@@ -555,6 +565,7 @@ input[type='password'] {
   }
 
   &__head-title{
+    position: relative;
       display: flex;
       align-items: center;
       font-weight: 300;
@@ -1130,6 +1141,43 @@ input[type='password'] {
     }
   }
 }
+
+.prompt {
+
+  position: absolute;
+  z-index: 10;                                                                                                                
+  left: 0;
+  top: 0;
+  max-width: 370px;
+  padding: 24px;
+  background: #FFFFFF;
+
+    &:before{
+    content: '' ; 
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #FFFFFF;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__inner {
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #150F0F;
+
+  }
+}
+
 
 /*site-navigation*/
 //! site-navigation
