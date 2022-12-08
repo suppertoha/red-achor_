@@ -210,13 +210,15 @@
 
   &__sidebar{
     display: none;
-    width: 25%;
     flex-shrink: 0;
+    width: auto;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1366px) {
+      width: 25%;
       display: block;
       margin-right: 32px;
     }
+
   }
 
   .main__layout{

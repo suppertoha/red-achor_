@@ -4,7 +4,9 @@
 
   /*page__row*/
   //? page__row
-  .page__row{
+  .page{
+
+    &__row{
 
       margin-bottom: 16px;
 
@@ -15,6 +17,14 @@
       @media screen and (min-width: 1024px) {
           margin-bottom: 32px;
       }
+    }
+
+    &__sidebar{
+      @media screen and (min-width: 1024px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 
   /*description__more-button*/
@@ -91,7 +101,6 @@
 
       .sub-categories-head__description{
           margin: 0;
-
       }
 
       @media screen and (min-width: 660px) {
@@ -132,8 +141,6 @@
     &__description{
       margin-bottom: 16px;
     }
-
-
   }
 
   /*site-navigation*/
@@ -148,8 +155,100 @@
     @media screen and (min-width: 1024px) {
       margin: 40px 0 10px;
     }
+
+    @media screen and (min-width: 1920px) {
+      margin: 24px auto 10px;
+    }
   }
 
+  .sidebar__block--ms-hidden{
+    display: block;
+    height: 100%;
+    max-width: 300px;
+    margin: 116px 16px 32px;
+    background: #F5F5F5;
+
+    button{
+      text-align: left;
+      padding: 24px 24px 24px 32px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #E4E5E5;
+      background: transparent;
+      svg{
+        display: none;
+      }
+
+  
+    }
+
+    .unit-block__button{
+      @media screen and (min-width: 1366px) {
+        padding: 32px 82px 32px 62px;
+      }
+    }
+
+    @media screen and (min-width: 1366px) {
+      max-width: 100%;
+      margin: 0;
+      background: transparent;
+
+      button{
+        background: #F5F5F5;
+        border: auto;
+        padding: auto;
+        svg{
+          display: flex;
+        }
+      }
+    }
+
+    .active{
+      position: relative;
+        &:before{
+        content: '' ; 
+        display: inline-block;
+        width: 4px;
+        height: 60%;
+        background: #DD2B1C;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+    }
+
+    .unit-block{
+      height: 100%;
+    }
+  
+    .units{
+
+      &__item{
+        &:nth-child(n + 2){
+          a{
+            padding: 12px 48px;
+          }
+        }
+      }
+
+ 
+      height: 100%;
+  
+      &__item{
+        @media screen and (min-width: 1366px) {
+          padding: 0;
+        }
+  
+      }
+    }
+
+    .ui-background-light {
+      display: block;
+      padding: 12px 32px;
+    }
+  }
 
 }
 
@@ -712,25 +811,21 @@ input[type='password'] {
 /*menu-mobile*/
 //! menu-mobile
 .menu-mobile{
-  
+
   .pc{
     display: none;
   }
-
-  .mobi{
-    display: flex;
-  }
-
-  @media screen and (min-width: 1024px) {
-    .pc{
-      display: flex;
-    }
   
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 32px;
+
     .mobi{
       display: none;
     }
 
-    margin-bottom: 32px;
+    .pc{
+      display: flex;
+    }
   }
 
   @media screen and (min-width: 1366px) {
@@ -836,6 +931,11 @@ input[type='password'] {
     max-width: 300px;
     margin: 116px 16px 32px;
   }
+
+  @media screen and (min-width: 1366px) {
+    max-width: 100%;
+    margin: 32px 0 0 0;
+  }
 }
 
 /*body__popup*/
@@ -874,6 +974,13 @@ input[type='password'] {
   background-color: #000000;
   background: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+
+  @media screen and (min-width: 1366px) {
+    position: static;
+    display: block;
+    background: transparent;
+
+  }
 }
 
 /*modal-window*/
@@ -920,7 +1027,7 @@ input[type='password'] {
 .close {
   position: absolute;
   cursor: pointer;
-  top: 20px;
+  top: 12px;
   right: 16px;
   color: #110101;
   height: 24px;
@@ -928,6 +1035,10 @@ input[type='password'] {
   font-size: 30px;
   line-height: 30px;
   text-align: center;
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
 }
 
 .close:hover,

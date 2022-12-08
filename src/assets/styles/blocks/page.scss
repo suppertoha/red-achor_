@@ -449,12 +449,10 @@
 
     &__sidebar {
         order: 2;
-        display: none;
+        width: auto;
+
         @media screen and (min-width: 1366px) {
             display: block;
-        }
-
-        @media screen and (min-width: 1024px) {
             order: 1;
             flex: 0 0 auto;
             width: 25%;
