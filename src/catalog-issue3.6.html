@@ -165,8 +165,232 @@
                                     <!-- _block-dropdown -->
                                     @@include('./assets/block-mixin/_block-dropdown.html')
 
-                                    <!-- filter -->
-                                    @@include('./assets/block-mixin/_filter.html')
+                                    <div id="simpleModal_2" class="modal">
+
+                                      <!-- filter -->
+                                      <form action="#" class="filter">
+                                        <div class="filter__inner">
+                                          <div class="filter__head bb">
+                                            <div class="filter__head-title">
+                                              Материал
+                                      
+                                              <span>
+                                                <svg>
+                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#question-red"></use>
+                                                </svg>
+                                              </span>
+                                            </div>
+                                      
+                                            <div class="filter__category">
+                                              <label class="radio">
+                                                <input type="checkbox" name="toggle" class="radio__input" />
+                                                <span>
+                                                  <svg>
+                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                                </span>
+                                                <div class="radio__name">Категория 1 (U1)</div>
+                                              </label>
+                                              <label class="radio">
+                                                <input type="checkbox" name="toggle" class="radio__input" />
+                                                <span>
+                                                  <svg>
+                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                                </span>
+                                                <div class="radio__name">Категория 2 (U2)</div>
+                                              </label>
+                                              <label class="radio">
+                                                <input type="checkbox" name="toggle" class="radio__input" />
+                                                <span>
+                                                  <svg>
+                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                                </span>
+                                                <div class="radio__name">Категория 3 (U3)</div>
+                                              </label>
+                                              <label class="radio">
+                                                <input type="checkbox" name="toggle" class="radio__input" />
+                                                <span>
+                                                  <svg>
+                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                                </span>
+                                                <div class="radio__name">Категория 4 (U4)</div>
+                                              </label>
+                                              <label class="radio">
+                                                <input type="checkbox" name="toggle" class="radio__input" />
+                                                <span>
+                                                  <svg>
+                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                  </svg>
+                                                </span>
+                                                <div class="radio__name">Категория 5 (U5)</div>
+                                              </label>
+                                      
+                                              <div class="catalog-item">
+                                                <div class="catalog-item__header cat-header">
+                                                  <div class="filter__show-more cat-header__btn go-js-drop-catalog">
+                                                    <b>Показать еще 2 </b>
+                                      
+                                                    <span>
+                                                      <svg>
+                                                        <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-red"></use>
+                                                      </svg>
+                                                    </span>
+                                                  </div>
+                                                </div>
+                                                <ul class="sub-catalog catalog-item__sub">
+                                                  <li class="sub-catalog__item">
+                                                    <label class="radio">
+                                                      <input type="checkbox" name="toggle" class="radio__input" />
+                                                      <span>
+                                                        <svg>
+                                                          <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                      </span>
+                                                      <div class="radio__name">Категория 6 (U6)</div>
+                                                    </label>
+                                                  </li>
+                                                  <li class="sub-catalog__item">
+                                                    <label class="radio">
+                                                      <input type="checkbox" name="toggle" class="radio__input" />
+                                                      <span>
+                                                        <svg>
+                                                          <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                      </span>
+                                                      <div class="radio__name">Категория 7 (U7)</div>
+                                                    </label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      
+                                          <div class="filter__additional-button bb">
+                                            <label class="radio">
+                                              <input type="checkbox" name="button" class="radio__input" />
+                                              <span>
+                                                <svg>
+                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#check-mark"></use>
+                                                </svg>
+                                              </span>
+                                              <div class="radio__name">Со шплинтом</div>
+                                            </label>
+                                          </div>
+                                      
+                                          <ul class="filter__input">
+                                            <li class="filter__input-body bb">
+                                              <div class="filter__input-title">Калибр цепи, мм</div>
+                                      
+                                              <div class="filter__input-items">
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>от</span>
+                                                    <input type="number" class="input" placeholder="11" />
+                                                  </label>
+                                                </div>
+                                      
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>до</span>
+                                                    <input type="number" class="input" placeholder="120" />
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </li>
+                                      
+                                            <li class="filter__input-body bb">
+                                              <div class="filter__input-title">Нагрузка пробная, кн</div>
+                                      
+                                              <div class="filter__input-items">
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>от</span>
+                                                    <input type="number" class="input" placeholder="11" />
+                                                  </label>
+                                                </div>
+                                      
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>до</span>
+                                                    <input type="number" class="input" placeholder="120" />
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </li>
+                                      
+                                            <li class="filter__input-body bb">
+                                              <div class="filter__input-title">Нагрузка разрушающая, кн</div>
+                                      
+                                              <div class="filter__input-items">
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>от</span>
+                                                    <input type="number" class="input" placeholder="11" />
+                                                  </label>
+                                                </div>
+                                      
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>до</span>
+                                                    <input type="number" class="input" placeholder="120" />
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </li>
+                                      
+                                            <li class="filter__input-body">
+                                              <div class="filter__input-title">Теоретическая масса, кг/м</div>
+                                      
+                                              <div class="filter__input-items">
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>от</span>
+                                                    <input type="number" class="input" placeholder="11" />
+                                                  </label>
+                                                </div>
+                                      
+                                                <div class="filter__input-item">
+                                                  <label for="">
+                                                    <span>до</span>
+                                                    <input type="number" class="input" placeholder="120" />
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      
+                                        <div class="filter__button reset">
+                                          <div class="filter__button-inner">
+                                            <div class="filter__button-text">сбросить фильтр</div>
+                                      
+                                            <div class="filter__button-img">
+                                              <svg>
+                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#basket"></use>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="filter__button apply">
+                                          <div class="filter__button-img">
+                                            <svg>
+                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#basket"></use>
+                                            </svg>
+                                          </div>
+                                          <div class="filter__button-text">Применить фильтр</div>
+                                          <div class="filter__button-arrow">
+                                            <svg>
+                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </form>
+                                      
+                                    </div>
 
                                     <!-- _download-catalog -->
                                     @@include('./assets/block-mixin/_download-catalog.html')
@@ -175,12 +399,895 @@
 
                                 <div class="page__content">
 
-                                  <!-- _catalog-table -->
-                                  @@include('./assets/block-mixin/_catalog-table.html')
-
-                                  <!-- p-mobile -->
-                                  @@include('./assets/block-mixin/_p-mobile.html')
+                                  <!-- catalog-table -->
+                                  <div class="table-wrapper">
+                                    <div class="p-list" data-sticke-wrapper>
+                                      <div class="p-list__header" data-sticke-element>
+                                          <div class="p-list__head">
+                                            <div class="p-list__dropdown">
+                                              Код
+                                              <span>
+                                                <svg class="p-list__arrow">
+                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-red"></use>
+                                                </svg>
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="p-list__head">Тип формы звена</div>
+                                          <div class="p-list__head">Температур&shy;ная зона эксплуатации</div>
+                                          <div class="p-list__head">Калибр, мм</div>
+                                          <div class="p-list__head">Шаг, мм</div>
+                                          <div class="p-list__head">Тип формы звена</div>
+                                          <div class="p-list__head">Температур&shy;ная зона эксплуатации</div>
+                                          <div class="p-list__head">Калибр, мм</div>
+                                      </div>
+                                      
+                                      <div class="p-list__body">
+                                        <!-- mobile -->
+                                          <div class="p-list__items">
+                                              <div class="p-list__item mobile-title" data-title="3-K1-0.50"><span>УЗОБ-120-W(-50)</span></div>
+                                              <div class="p-list__item"><span>12</span></div>
+                                              <div class="p-list__item" data-text="Категория: " data-num="0.5"><span>2</span></div>
+                                              <div class="p-list__item" data-text="Размер С, мм: " data-num="83.0"><span>2</span></div>
+                                              <div class="p-list__item" data-text="Пробная нагрузка: " data-num="25"><span>2</span></div>
+                                              <div class="p-list__item" data-text="Размер S, мм: " data-num="22"><span>2</span></div>
+                                              <div class="p-list__item" data-text="Разрушающая нагрузка: " data-num="22"><span>2</span></div>
+                                              <div class="p-list__item" data-text="Теоретическая масса, кг: " data-num="0.27"><span>2</span></div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                          <span class="p-list__text ">
+                                                            <p class="mobi">Быстрый заказ</p>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item mobile-title" data-title="3-K1-0.63"><span>УЗОБ-120-W(-50)</span></div>
+                                            <div class="p-list__item"><span>12</span></div>
+                                            <div class="p-list__item" data-text="Категория: " data-num="0.63"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер С, мм: " data-num="88.5"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Пробная нагрузка: " data-num="25"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер S, мм:" data-num=" 22"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Разрушающая нагрузка:" data-num=" 22"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Теоретическая масса, кг:" data-num=" 0.44"><span>2</span></div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="p-list__text ">
+                                                          <p class="mobi">Быстрый заказ</p>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                   
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                  
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                            <div class="p-list__item mobile-title" data-title="3-K1-2.50"><span>УЗОБ-120-W(-50)</span></div>
+                                            <div class="p-list__item"><span>12</span></div>
+                                            <div class="p-list__item" data-text="Категория: " data-num="2.50"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер С, мм: " data-num="154.0"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Пробная нагрузка: " data-num="50"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер S, мм: " data-num="3400"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Разрушающая нагрузка: " data-num="38"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Теоретическая масса, кг: " data-num="-"><span>2</span></div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="p-list__text ">
+                                                          <p class="mobi">Быстрый заказ</p>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                  
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                  
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                            <div class="p-list__item mobile-title" data-title="3-K1-2.50"><span>23-K20-10.00</span></div>
+                                            <div class="p-list__item"><span>12</span></div>
+                                            <div class="p-list__item" data-text="Категория: " data-num="0.5"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер С, мм: " data-num="83.0"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Пробная нагрузка: " data-num="140"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер S, мм: " data-num="22
+                                            "><span>2</span></div>
+                                            <div class="p-list__item" data-text="Разрушающая нагрузка: " data-num="22"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Теоретическая масса, кг: " data-num="27"><span>2</span></div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="p-list__text ">
+                                                          <p class="mobi">Быстрый заказ</p>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                  
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                  
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                            <div class="p-list__item mobile-title" data-title="3-K1-2.50"><span>3-K1-0.50</span></div>
+                                            <div class="p-list__item"><span>12</span></div>
+                                            <div class="p-list__item" data-text="Категория: " data-num="0.5"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер С, мм: " data-num="83.0"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Пробная нагрузка: " data-num="25"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер S, мм: " data-num="22
+                                            "><span>2</span></div>
+                                            <div class="p-list__item" data-text="Разрушающая нагрузка: " data-num="22"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Теоретическая масса, кг: " data-num="0.27"><span>2</span></div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="p-list__text ">
+                                                          <p class="mobi">Быстрый заказ</p>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                  
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                  
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                            <div class="p-list__item mobile-title" data-title="3-K1-2.50"><span>3-K1-0.50</span></div>
+                                            <div class="p-list__item"><span>12</span></div>
+                                            <div class="p-list__item" data-text="Категория: " data-num="0.5"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер С, мм: " data-num="83.0"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Пробная нагрузка: " data-num="25"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер S, мм: " data-num="22
+                                            "><span>2</span></div>
+                                            <div class="p-list__item" data-text="Разрушающая нагрузка: " data-num="22"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Теоретическая масса, кг: " data-num="0.27"><span>2</span></div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="p-list__text ">
+                                                          <p class="mobi">Быстрый заказ</p>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                  
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                  
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                            <div class="p-list__item mobile-title" data-title="3-K1-2.50"><span>3-K1-0.50</span></div>
+                                            <div class="p-list__item"><span>12</span></div>
+                                            <div class="p-list__item" data-text="Категория: " data-num="0.5"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер С, мм: " data-num="83.0"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Пробная нагрузка: " data-num="25"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Размер S, мм: " data-num="22
+                                            "><span>2</span></div>
+                                            <div class="p-list__item" data-text="Разрушающая нагрузка: " data-num="22"><span>2</span></div>
+                                            <div class="p-list__item" data-text="Теоретическая масса, кг: " data-num="0.27"><span>2</span></div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="p-list__text ">
+                                                          <p class="mobi">Быстрый заказ</p>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                  
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                  
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- pc -->
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                        
+                                          <div class="p-list__items">
+                                              <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                              <div class="p-list__item">12</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">2</div>
+                                              <div class="p-list__item">
+                                                <div class="p-list__options">
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                              <svg class="p-list__icon">
+                                                                  <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                              </svg>
+                                                          </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                  <div class="p-list__option">
+                                                      <button class="p-list__button" type="button">
+                                                          <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                            </svg>
+                                                          </span>
+                                                          <span class="p-list__text">
+                                                            В заказ
+                                                        </span>
+                                                      </button>
+                                                  </div>
+                                    
+                                                </div>
+                                              </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                          <div class="p-list__items">
+                                            <div class="p-list__item">УЗОБ-120-W(-50)</div>
+                                            <div class="p-list__item">12</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">2</div>
+                                            <div class="p-list__item">
+                                              <div class="p-list__options">
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                            <svg class="p-list__icon">
+                                                                <use href="./assets/images/svg-sprite/svg-sprite.svg#order-s"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                    
+                                                <div class="p-list__option">
+                                                    <button class="p-list__button" type="button">
+                                                        <span class="p-list__box">
+                                                          <svg class="p-list__icon">
+                                                              <use href="./assets/images/svg-sprite/svg-sprite.svg#order-l"></use>
+                                                          </svg>
+                                                        </span>
+                                                        <span class="p-list__text">
+                                                          В заказ
+                                                      </span>
+                                                    </button>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                      </div>
+                                    </div> 
+                                  </div>
 
                                   <div class="product-list">
 
@@ -212,39 +1319,30 @@
                           <div id="simpleModal_1" class="modal">
 
                             <!-- parts-list -->
-                            @@include('./assets/block-mixin/_parts-list.html')
-                          </div>
-                        
-                          <div id="simpleModal_2" class="modal">
-
-                            <!-- filter-mobile -->
-                            @@include('./assets/block-mixin/_filter-mobile.html')
-                          </div>
-
-                            <!-- main__help-->
-                            <div class="page__section main__help">
-                              <div class="page__container">
-                                  <div class="page__box">
-                                    <!-- HELP -->
-                                    <a class="help ui-background-light" href="#">
-                                            <div class="help__box">
-                                                    <h2 class="help__name title title--ms-64 title--ts-88 title--ds-80 title--dm-152 title--dl-172 ui-color-black-100">
-                                                            <span class="help__word">Не нашли,</span> <span class="help__word">что искали?</span>
-                                                    </h2>
-                                                    <div class="help__sub-box">
-                                                            <p class="help__desc brief brief--light brief--ms-14 brief--ts-16 brief--dm-20 brief--dl-24 ui-color-black-100">
-                                                                    Опишите нам вашу задачу, и мы подберём вам нужную продукцию, или разместим заказ на производство.
-                                                            </p>
-                                                            <svg class="help__icon">
-                                                                    <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
-                                                            </svg>
-                                                    </div>
-                                            </div>
-                                    </a>
-                                    <!-- / HELP -->
-                                  </div>
+                            <div class="parts-list">
+                              <div class="parts-list__inner">
+                                <div class="parts-list__title">Якорные цепи и комплектующие</div>
+                                <div class="parts-list__subtitle">Комплектующие якорных цепей</div>
+                                <ul class="parts-list__items">
+                                  <li class="parts-list__item active">Якорные смычки</li>
+                                  <li class="parts-list__item">Звено общее с контрфорсом якорной цепи</li>
+                                  <li class="parts-list__item">Звено увеличенное с контрфорсом якорной цепи</li>
+                                  <li class="parts-list__item">Концевое звено для якорной цепи с контрфорсами</li>
+                                  <li class="parts-list__item">Звено общее без контрфорса якорной цепи</li>
+                                  <li class="parts-list__item">Звено увеличенное без контрфорса якорной цепи</li>
+                                  <li class="parts-list__item">Концевое звено для якорной цепи без контрфорсов</li>
+                                  <li class="parts-list__item">Звено соединительное (Кентера)</li>
+                                  <li class="parts-list__item">Скоба концевая</li>
+                                  <li class="parts-list__item">Вертлюг и вертлюг-скобы</li>
+                                </ul>
                               </div>
                             </div>
+                          </div>
+                        
+                        
+
+                            <!-- main__help-->
+                            @@include('./assets/block-mixin/3.6.catalog-issue/_help.html')
 
                             <!-- Tabs -->
                             @@include('./assets/block-mixin/_tabs.html')

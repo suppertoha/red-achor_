@@ -16,7 +16,141 @@
       <div class="container-product__inner">
         <div class="container-product__sidebar">
           <!-- _block-dropdown -->
-          @@include('./assets/block-mixin/_block-dropdown.html')
+
+          <div class="sidebar__block sidebar__block--ms-hidden sidebar__block--ds-visible">
+            <!-- UNIT BLOCK -->
+            <div class="unit-block js-unit-block">
+              <button
+                class="unit-block__button js-unit-block__button unit unit--button ui-background-light"
+                type="button"
+              >
+                <span
+                  class="unit__name brief brief--light brief--ds-16 brief--dm-20 brief--dl-24 ui-color-black-100"
+                >
+                  Якорные цепи и комплектующие
+                </span>
+                <svg class="unit-block__icon">
+                  <use href="./assets/images/svg-sprite/svg-sprite.svg#chevron-n"></use>
+                </svg>
+              </button>
+              <div class="unit-block__content js-unit-block__content">
+                <!-- UNITS -->
+                <ul class="units">
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                        Комплектующие якорных цепей
+                      </div>
+                    </a>
+                  </li>
+          
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light " href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                        Якорные смычки
+                      </div>
+                    </a>
+                  </li>
+          
+                  <li class="units__item units__item--light unit--active">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Звено общее с контрфорсом якорной цепи
+                      </div>
+                    </a>
+                  </li>
+          
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Звено увеличенное с контрфорсом якорной цепи
+                      </div>
+                    </a>
+                  </li>
+          
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Концевое звено для якорной цепи с контрфорсами
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Звено общее без контрфорса якорной цепи
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Звено увеличенное без контрфорса якорной цепи
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Концевое звено для якорной цепи без контрфорсов
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Звено соединительное (Кентера)
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Скоба концевая
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="units__item units__item--light">
+                    <a class="unit unit--small ui-background-light" href="#">
+                      <div
+                        class="unit__name brief brief--light brief--ds-14 brief--dm-16 brief--dl-20 ui-color-black-100"
+                      >
+                      Вертлюг и вертлюг-скобы
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- / UNITS -->
+              </div>
+            </div>
+            <!-- / UNIT BLOCK -->
+          </div>
 
           <!-- _download-catalog -->
           @@include('./assets/block-mixin/_download-catalog.html')
@@ -146,6 +280,20 @@
                     <article class="page__col cards__item sub-categories__item">
                       <a class="cards__card sub-category ui-background-white-100" href="#">
                         <figure class="sub-category__picture">
+                          <img class="sub-category__image" src="./assets/images/content/sub-category/img-sub-category-8.png" alt="Alt Text">
+                        </figure>
+                        <h2 class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100">
+                                Такелажные изделия
+                        </h2>
+                        <svg class="sub-category__icon">
+                          <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
+                        </svg>
+                      </a>
+                    </article>
+
+                    <article class="page__col cards__item sub-categories__item">
+                      <a class="cards__card sub-category ui-background-white-100" href="#">
+                        <figure class="sub-category__picture">
                           <img
                             class="sub-category__image"
                             src="./assets/images/content/sub-category/img-sub-category-4.png"
@@ -156,6 +304,26 @@
                           class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100"
                         >
                         Скоба концевая Исполнение А
+                        </h2>
+                        <svg class="sub-category__icon">
+                          <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
+                        </svg>
+                      </a>
+                    </article>
+
+                    <article class="page__col cards__item sub-categories__item">
+                      <a class="cards__card sub-category ui-background-white-100" href="#">
+                        <figure class="sub-category__picture">
+                          <img
+                            class="sub-category__image"
+                            src="./assets/images/content/sub-category/img-sub-category-4.png"
+                            alt="Alt Text"
+                          />
+                        </figure>
+                        <h2
+                          class="sub-category__name brief brief--light brief--ms-18 brief--ts-20 brief--ds-24 brief--dl-32 ui-color-black-100"
+                        >
+                        Вертлюг-скоба арктического исполнения
                         </h2>
                         <svg class="sub-category__icon">
                           <use href="./assets/images/svg-sprite/svg-sprite.svg#arrow-se"></use>
