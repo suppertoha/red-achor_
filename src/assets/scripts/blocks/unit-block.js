@@ -25,24 +25,24 @@
 
 initUnitBlock();
     
-const btnMenu = document.querySelector(".prompt-button");
-const menu = document.querySelector(".prompt");
-const toggleMenu = function () {
-    menu.classList.toggle("open");
-}
+//const btnMenu = document.querySelector(".prompt-button");
+//const menu = document.querySelector(".prompt");
+//const toggleMenu = function () {
+//    menu.classList.toggle("open");
+//}
 
-btnMenu.addEventListener("click", function (e) {
-    e.stopPropagation();
-    toggleMenu();
-});
+//btnMenu.addEventListener("click", function (e) {
+//    e.stopPropagation();
+//    toggleMenu();
+//});
 
-document.addEventListener("click", function (e) {
-    const target = e.target;
-    const its_menu = target == menu || menu.contains(target);
-    const its_btnMenu = target == btnMenu;
-    const menu_is_active = menu.classList.contains("open");
+//document.addEventListener("click", function (e) {
+//    const target = e.target;
+//    const its_menu = target == menu || menu.contains(target);
+//    const its_btnMenu = target == btnMenu;
+//    const menu_is_active = menu.classList.contains("open");
 
-    if (!its_menu && !its_btnMenu && menu_is_active) {
-        toggleMenu();
-    }
-});
+//    if (!its_menu && !its_btnMenu && menu_is_active) {
+//        toggleMenu();
+//    }
+//});
