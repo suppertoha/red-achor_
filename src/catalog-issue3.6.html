@@ -1,12 +1,11 @@
 @@include('./assets/templates/template-header.html', { 'lang': 'ru', 'title': 'Red Anchor | Все категории' })
 
-       
     <!-- PAGE -->
     <div class="body__page page page--light js-page">
 
-         @@include('./assets/templates/header.html')
+        @@include('./assets/templates/header.html')
 
-             <!-- PAGE -->
+            <!-- PAGE -->
         <div class="body__page page page--light" data-sticky-container>
 
         @@include('./assets/templates/header.html')
@@ -77,7 +76,7 @@
                           <!-- slider Swiper -->
                           <div class="swiper swiper-product mySwiper">
                             <div class="swiper-wrapper swiper-product__wrapper">
-                              <div class="swiper-slide swiper-product__slide">
+                              <div class="swiper-slide swiper-product__slide" data-fancybox="preview">
                                 <picture class="about-product-img picture">
                                   <source srcset="./assets/images/content/about-product/product-chain6.png" media="(min-width: 1920px)" />
                                   <source srcset="./assets/images/content/about-product/product-chain5.png" media="(min-width: 1600px)" />
@@ -89,7 +88,7 @@
                                 </picture>
                               </div>
                     
-                              <div class="swiper-slide swiper-product__slide">
+                              <div class="swiper-slide swiper-product__slide" data-fancybox="preview">
                                 <picture class="about-product-img picture">
                                   <source srcset="./assets/images/content/about-product/product-chain6.png" media="(min-width: 1920px)" />
                                   <source srcset="./assets/images/content/about-product/product-chain5.png" media="(min-width: 1600px)" />
@@ -149,7 +148,20 @@
                         </div>
                       </div>
                     </div>
-                  <!-- / site-navigation -->
+
+                    <div style="display: none">
+                      <a data-fancybox="preview" href="./assets/images/content/about-product/product-chain5.png">
+                        <img src="./assets/images/content/about-product/product-chain5.png" alt="" />
+                      </a>
+                      <a data-fancybox="preview" href="./assets/images/content/about-product/circuit-analysis4.png">
+                        <img src="./assets/images/content/about-product/circuit-analysis4.png" alt="" />
+                      </a>
+                      <a data-fancybox="preview" href="./assets/images/content/about-product/circuit-analysis3.png">
+                        <img src="./assets/images/content/about-product/circuit-analysis3.png" alt="" />
+                      </a>
+                    </div>
+
+                    <!-- / site-navigation -->
                     <div class="page__container">
 
                         <div class="page__box">
@@ -167,7 +179,7 @@
 
                                       <div class="sidebar__block sidebar__block--ms-hidden sidebar__block--ds-visible">
                                         <!-- UNIT BLOCK -->
-                                        <div class="unit-block js-unit-block">
+                                        <div class="unit-block js-unit-block mobile">
                                           <button
                                             class="unit-block__button js-unit-block__button unit unit--button ui-background-light"
                                             type="button"
@@ -315,25 +327,28 @@
                                             </span>
                                           </div>
                                           <div class="filter__head bb">
+
+                                            <div class="prompt">
+                                              <div class="prompt__inner">
+                                                <p>
+                                                  Звенья якорной цепи калибром свыше 15 мм снабжают контрфорсами (поперечными распорками, повышающими прочность звена примерно на 20%)
+                                                </p>
+                                                <p>
+                                                  Для удержания якорной цепи (троса) в натянутом положении применяют стопоры — стационарные и переносные (палубные и цепные).
+                                                </p>
+                                              </div>
+                                            </div>
+                                              
                                             <div class="filter__head-title">
                                               Материал
                                       
-                                              <span>
+                                              <span class="prompt-button">
                                                 <svg>
                                                   <use href="./assets/images/svg-sprite/svg-sprite.svg#question-red"></use>
                                                 </svg>
                                               </span>
 
-                                              <div class="prompt">
-                                                <div class="prompt__inner">
-                                                  <p>
-                                                    Звенья якорной цепи калибром свыше 15 мм снабжают контрфорсами (поперечными распорками, повышающими прочность звена примерно на 20%)
-                                                  </p>
-                                                  <p>
-                                                    Для удержания якорной цепи (троса) в натянутом положении применяют стопоры — стационарные и переносные (палубные и цепные).
-                                                  </p>
-                                                </div>
-                                              </div>
+                                    
                                             </div>
                                       
                                             <div class="filter__category">

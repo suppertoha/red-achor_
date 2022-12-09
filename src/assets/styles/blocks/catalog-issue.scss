@@ -7,7 +7,7 @@
   .page{
 
     &__row{
-
+      position: relative;
       margin-bottom: 16px;
 
       @media screen and (min-width: 600px) {
@@ -259,6 +259,11 @@
     @media screen and (min-width: 1366px) {
       display: block;
     }
+  }
+
+  .prompt {
+    left: 120px;
+    top: -105px;
   }
 }
 
@@ -546,6 +551,7 @@ input[type='password'] {
   }
 
   &__head{
+    position: relative;
       &.bb{
           padding-bottom: 48px;
 
@@ -575,7 +581,7 @@ input[type='password'] {
 
       span{
           margin-left: 8px;
-
+          cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -585,8 +591,10 @@ input[type='password'] {
           background: rgba(79, 86, 89, 0.1);
 
           svg{
-              width: 9px;
-              height: 20px;
+            transition: 800ms;
+            width: 7px;
+            height: 15px;
+            fill:#DD2B1C;
           }
       }
   }
@@ -731,12 +739,14 @@ input[type='password'] {
       }
 
       &-inner{
+        transition: 800ms;
           display: flex;
           align-items: center;
           justify-content: space-between;
           position: relative;
           width: 100%;
           padding: 28px 0;
+          overflow: hidden;
 
           &::before{
               position: absolute;
@@ -747,6 +757,18 @@ input[type='password'] {
               background: #DCDDDE;
               right: 0px;
               bottom: 0;
+          } 
+
+          &::after{
+            transition: 800ms;
+            position: absolute;
+            display: block;
+            content: '';
+            width:100%;
+            height: 4px;
+            background: #dd2b1c;
+            left: -100%;
+            bottom: 0;
           } 
       }
 
@@ -763,7 +785,29 @@ input[type='password'] {
           background: #FFFFFF;
 
           .filter__button-text{
-              color: rgba(79, 86, 89, 0.4);
+            transition: 800ms;
+            color: rgba(79, 86, 89, 0.4);
+          }
+
+          svg{
+            transition: 800ms;
+            fill: #B9BCBD;
+          }
+
+          &:hover{
+            svg{
+              fill: #dd2b1c;
+            }
+
+            .filter__button-text{
+              color: #dd2b1c;
+            }
+
+            .filter__button-inner{
+              &::after{
+                left: 0;
+              }
+            }
           }
       }
 
@@ -817,6 +861,17 @@ input[type='password'] {
       }
   }
 
+}
+
+.prompt-button{
+  transition: 800ms;
+
+  &:hover{
+    background: #dd2b1c;
+    svg{
+      fill:#fff;
+    }
+  }
 }
 
 /*menu-mobile*/
@@ -990,7 +1045,7 @@ input[type='password'] {
     position: static;
     display: block;
     background: transparent;
-
+    overflow: visible;
   }
 }
 
@@ -1145,10 +1200,10 @@ input[type='password'] {
 .prompt {
 
   position: absolute;
-  z-index: 10;                                                                                                                
+  z-index:10000000;                                                                                                                
   left: 0;
   top: 0;
-  max-width: 370px;
+  width: 370px;
   padding: 24px;
   background: #FFFFFF;
 
