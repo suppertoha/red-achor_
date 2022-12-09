@@ -25,24 +25,27 @@
 
 initUnitBlock();
     
-//const btnMenu = document.querySelector(".prompt-button");
-//const menu = document.querySelector(".prompt");
-//const toggleMenu = function () {
-//    menu.classList.toggle("open");
-//}
+  //! Modal-button-click
 
-//btnMenu.addEventListener("click", function (e) {
-//    e.stopPropagation();
-//    toggleMenu();
-//});
+  // prompt
 
-//document.addEventListener("click", function (e) {
-//    const target = e.target;
-//    const its_menu = target == menu || menu.contains(target);
-//    const its_btnMenu = target == btnMenu;
-//    const menu_is_active = menu.classList.contains("open");
+function prompt() {
+  $('.prompt-button').on('click', function () {
+    $(this).toggleClass('active');
+    $('.prompt').toggleClass('active');
+  });
 
-//    if (!its_menu && !its_btnMenu && menu_is_active) {
-//        toggleMenu();
-//    }
-//});
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.prompt-button, .prompt').length) {
+      $('.prompt').removeClass('active');
+    }
+    e.stopPropagation();
+  });
+
+  $('.prompt__button').on('click', function () { 
+    $('.prompt').removeClass('active');
+  })
+}
+
+prompt()
+

@@ -148,6 +148,8 @@
     }
   }
 
+  /*tabs-container*/
+  //? tabs-container
   .page{
 
     &__col{
@@ -195,6 +197,13 @@
       }
     }
   }
+
+  /*tabs-container*/
+  //? tabs-container
+  .file{
+    display: flex;
+  }
+
 }
 
 /*container-product*/
@@ -217,6 +226,11 @@
   }
 
   .mobi{
+    padding: 0 16px;
+
+    @media screen and (min-width: 600px) {
+      padding: 0;
+    }
     @media screen and (min-width: 1024px) {
       display: none;
     }
@@ -259,7 +273,7 @@
     p{
       padding-right: 40px;
     }
-  }
 
+  }
 }
 

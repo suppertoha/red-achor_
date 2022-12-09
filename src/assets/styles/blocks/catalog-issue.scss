@@ -262,8 +262,13 @@
   }
 
   .prompt {
-    left: 120px;
-    top: -105px;
+    top: 0;
+    left: 0;
+
+    @media screen and (min-width: 1366px) {
+      left: 150px;
+      top: -77px;
+    }
   }
 }
 
@@ -782,6 +787,10 @@ input[type='password'] {
       }
 
       &.reset{
+          position: sticky;
+          bottom: 0;
+          left: 0;
+          right: 0;
           background: #FFFFFF;
 
           .filter__button-text{
@@ -812,6 +821,10 @@ input[type='password'] {
       }
 
       &.apply{
+          position: sticky;
+          bottom: 0;
+          left: 0;
+          right: 0;
           background: #DD2B1C;
           padding: 0;
           display: flex;
@@ -905,7 +918,10 @@ input[type='password'] {
       align-items: center;
   }
 
+
+
   &__item{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -924,6 +940,17 @@ input[type='password'] {
       z-index: 4;
       left: 0px;
       top: 0px;
+    }
+
+    &:hover{
+      .menu-mobile__text{
+        color: #DD2B1C;
+      }
+      span{
+        svg{
+          fill: #DD2B1C;
+        }
+      }
     }
 
 
@@ -948,6 +975,7 @@ input[type='password'] {
   }
 
   &__text{
+    transition: 800ms;
       font-family: 'TT Bluescreens';
       font-style: normal;
       font-weight: 700;
@@ -975,6 +1003,8 @@ input[type='password'] {
     margin-right: 8px;
 
     svg{
+      transition: 800ms;
+
       width: 18px;
       height: 21px;
       fill: #DD2B1C;
@@ -1199,26 +1229,39 @@ input[type='password'] {
 
 .prompt {
 
+  transition: 800ms;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   z-index:10000000;                                                                                                                
   left: 0;
   top: 0;
-  width: 370px;
   padding: 24px;
   background: #FFFFFF;
+  width: 100%;
+
+  @media screen and (min-width: 1366px) {
+    width: 370px;
 
     &:before{
-    content: '' ; 
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 15px solid #FFFFFF;
-    border-bottom: 15px solid transparent;
-    position: absolute;
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
+      content: '' ; 
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #FFFFFF;
+      border-bottom: 15px solid transparent;
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  
+  &.active{
+    opacity: 1;
+    visibility: visible;
   }
 
   &__inner {
@@ -1230,6 +1273,32 @@ input[type='password'] {
     letter-spacing: 0.05em;
     color: #150F0F;
 
+  }
+
+  &__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+
+    @media screen and (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__button{
+    display: flex;
+    align-items: flex-start;
+    svg{
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -1562,6 +1631,10 @@ input[type='password'] {
   @media screen and (min-width: 1366px) {
     display: block;
   }
+}
+
+.fancybox-button {
+  background: transparent;
 }
 
 
