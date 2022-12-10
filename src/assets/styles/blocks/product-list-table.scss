@@ -258,6 +258,12 @@
 
     &:first-child{
       border-right: 2px solid rgba(79, 86, 89, 0.1);
+
+      @media screen and (min-width: 1024px) {
+        .p-list__text {
+          display: none;
+        }
+      }
     }
     @media screen and (min-width: 1024px) {
       width: auto;
@@ -296,6 +302,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    span{
+      svg{
+        display: flex;
+        align-items: center;
+      }
+      
+    }
   }
 
   &__box{
