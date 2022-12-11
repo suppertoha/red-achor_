@@ -322,6 +322,16 @@
       opacity: 1;
     }
   }
+
+  /* main__layout  */
+  //? main__layout 
+  .main__layout{
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 80px;
+    }
+  }
   
 }
 
@@ -329,6 +339,13 @@
   //! about-product
   .about-product {
     &__description {
+      font-family: 'TT Bluescreens';
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: #150F0F;
       font-size: 32px;
       line-height: 32px;
       letter-spacing: 0.03em;
@@ -338,6 +355,7 @@
         display: block;
         font-size: 18px;
         font-weight: 500;
+        padding: 8px 0 16px;
       }
 
       @media screen and (min-width: 600px) {
@@ -372,6 +390,7 @@
     &__images {
       position: relative;
       padding: 0 16px;
+      margin-bottom: 16px;
       //height: 144px;
       height: 100%;
       max-height: inherit;
@@ -426,6 +445,10 @@
       @media screen and (min-width: 600px) {
         margin-bottom: 16px;
       }
+    }
+
+    &__text{
+      margin-bottom: 40px;
     }
   }
 
@@ -618,6 +641,7 @@
   }
 
   &__item {
+
     span{
       font-weight: 500;
     }
@@ -634,16 +658,58 @@
   &__description {
     display: flex;
     transition: 300ms;
-    &:hover{
-      background: #F5F5F5;
+
+    &.p-list{
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: 1024px) {
+        flex-direction: row;
+      }
+
       .p-list__item{
+        .p-list__option{
+          &:first-child{
+            @media screen and (min-width: 1024px) {
+              .p-mobile__text-button{
+                display: none;
+              }
+            }
+          }
+        }
+        &:first-child{
+          padding: 16px;
+          span{
+            margin-left: 8px;
+          }
+        }
         &:last-child{
-          opacity: 1;
+          display: flex;
+          padding: 0 16px;
+
+          @media screen and (min-width: 1024px) {
+            padding: 0;
+          }
+        }
+
+      }
+    
+    }
+
+    @media screen and (min-width: 1024px) {
+      &:hover{
+        background: #F5F5F5;
+        .p-list__item{
+          &:last-child{
+            opacity: 1;
+          }
         }
       }
     }
 
   }
+
+
 
   &__buttons {
   }
