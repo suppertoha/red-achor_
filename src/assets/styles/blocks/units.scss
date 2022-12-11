@@ -6,6 +6,12 @@
 
     &__item {
 
+      @media screen and (min-width: 1024px) {
+        a{
+          display: flex;
+        }
+      }
+
         &--dark {
 
             &:not(:last-child) {
