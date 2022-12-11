@@ -9,15 +9,21 @@
                 <main class="page__main main catalog-kit">
 
                       <div class="header-container">
-                        <!--site-navigation-->
-                        @@include('./assets/block-mixin/3.7.cart-product/_site-navigation.html')
+                        <!-- nav-wrap -->
+                        <div class="nav-wrap">
+                          <!--site-navigation-->
+                          @@include('./assets/block-mixin/3.7.cart-product/_site-navigation.html')
+
+                          <!--print-->
+                          @@include('./assets/block-mixin/3.7.cart-product/_print.html')
+                        </div>
 
                         <!--about-product-->
                         <div class="about-product">
                           <div class="about-product__inner">
                             <div class="about-product__container-text">
                               <div class="about-product__description">Якорная цепь, исполнение 1
-                                
+                                <span>С распоркой, скобой и коренной смычкой</span>
                               </div>
                         
                               <div class="about-product__contain">
