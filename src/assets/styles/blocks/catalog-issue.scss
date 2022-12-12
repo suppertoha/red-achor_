@@ -1473,6 +1473,30 @@ input[type='password'] {
   letter-spacing: 0.03em;
   color: rgba(79, 86, 89, 0.7);
 
+  &__list{
+    @media screen and (min-width: 1024px) {
+      padding-bottom: 9px;
+      border-bottom: 2px solid rgba(79, 86, 89, 0.2);
+      &:not(:first-child){
+        margin-left: 30px;
+        position: relative;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background: #50575a;
+          border-radius: 50%;
+          position: absolute;
+          left: -16px;
+          top: 5px;
+        }
+      }
+    }
+  
+  }
+
+
   @media screen and (min-width: 1920px) {
     max-width: 1920px;
     margin: 40px auto 16px;
@@ -1544,26 +1568,7 @@ input[type='password'] {
       }
     }
 
-    @media screen and (min-width: 1024px) {
-      padding-bottom: 9px;
-      border-bottom: 2px solid rgba(79, 86, 89, 0.2);
 
-      &:first-child {
-        margin-right: 30px;
-        position: relative;
-        &:before {
-          content: '';
-          display: inline-block;
-          width: 4px;
-          height: 4px;
-          background: #50575a;
-          border-radius: 50%;
-          position: absolute;
-          right: -16px;
-          top: 5px;
-        }
-      }
-    }
   }
 
   &--dark{
