@@ -147,6 +147,8 @@
 /* print */
 //! print
 .print {
+  color: rgba(79, 86, 89, 0.7);
+  transition: 800ms;
   display: block;
   padding: 16px 16px 8px;
 
@@ -157,6 +159,14 @@
   @media screen and (min-width: 1024px) {
     display: block;
     padding: 0;
+
+    &:hover{
+      color: #DD2B1C;
+
+      .print__images{
+        fill:#DD2B1C;
+      }
+    }
   }
 
   &__inner {
@@ -164,6 +174,7 @@
   }
 
   &__images {
+    transition: 800ms;
     width: 20px;
     height: 20px;
     fill:rgba(79, 86, 89, 0.4);
@@ -183,7 +194,6 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
-    color: rgba(79, 86, 89, 0.7);
   }
 }
 
@@ -644,8 +654,18 @@
 
   &__item {
 
+
     span{
       font-weight: 500;
+    }
+
+    @media screen and (min-width: 1024px) {
+      a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
     &:nth-child(n+5){
@@ -691,6 +711,7 @@
 
           @media screen and (min-width: 1024px) {
             padding: 0;
+            height: 100%;
           }
         }
 

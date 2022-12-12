@@ -389,8 +389,7 @@
   left: 0px;
 
   @media screen and (min-width: 600px) {
-    left: 15px;
-  
+    padding: 16px 32px;
   }
 }
 
@@ -407,6 +406,7 @@
 /*main-modal*/
 //! main-modal
 .main-modal{
+  width: 320px;
   background: #F5F5F5;
   display: none;
 
@@ -438,6 +438,7 @@
   }
 
   @media screen and (min-width: 600px) {
+    width: 300px;
     height: 745px;
   }
   
