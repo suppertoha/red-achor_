@@ -5,11 +5,8 @@
 .units {
 
     &__item {
-
-      @media screen and (min-width: 1024px) {
-        a{
-          display: flex;
-        }
+      a{
+        display: flex;
       }
 
         &--dark {

@@ -368,12 +368,7 @@
     }
   }
 
-  .sidebar{
-    &__block{
-      background: red;
-    }
 
-  }
 }
 
 
@@ -414,6 +409,33 @@
 .main-modal{
   background: #F5F5F5;
   display: none;
+
+  .unit--small{
+    padding: 12px 32px;
+  }
+
+  .unit-block__button {
+    width: 100%;
+    position: relative;
+    padding: 12px 56px 12px 32px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(79,86,89,.1);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  .sidebar {
+
+    &__block {
+      display: flex;
+        &--ms-hidden {
+            display: flex;
+        }
+
+      }
+  }
 
   @media screen and (min-width: 600px) {
     height: 745px;

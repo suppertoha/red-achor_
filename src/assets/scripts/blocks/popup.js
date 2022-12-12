@@ -75,4 +75,4 @@ const initPopup = () => {
 
 };
 
-initPopup();
+//initPopup();

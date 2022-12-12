@@ -1,5 +1,8 @@
     // unit-block.js
-    
+const mobile = document.querySelector('.mobile')
+if (document.documentElement.clientWidth > 1366) {
+  mobile.classList.add('js-unit-block')
+}
     // Unit Block
 
     const initUnitBlock = () => {
