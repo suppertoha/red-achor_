@@ -1,7 +1,7 @@
 @@include('./assets/templates/template-header.html', { 'lang': 'ru', 'title': 'Red Anchor | Все категории' })
 
     <!-- PAGE -->
-    <div class="body__page page page--light js-page">
+    <div class="body__page page page--light js-page modal-filter">
 
         @@include('./assets/templates/header.html')
 
@@ -184,11 +184,11 @@
 
                                 <div class="page__sidebar">
 
-                                    <div id="simpleModal_1" class="modal">
+                                    <div id="modal-accessories" class="main-modal">
 
                                       <div class="sidebar__block sidebar__block--ms-hidden sidebar__block--ds-visible">
                                         <!-- UNIT BLOCK -->
-                                        <div class="unit-block js-unit-block mobile">
+                                        <div class="unit-block block-dropdown js-unit-block mobile">
                                           <button
                                             class="unit-block__button js-unit-block__button unit unit--button ui-background-light"
                                             type="button"
@@ -323,7 +323,7 @@
                                       </div>
                                     </div>
                                         <!-- filter -->
-                                    <div id="simpleModal_2" class="modal">
+                                    <div id="modal-filter" class="main-modal">
 
                                       <form action="#" class="filter filter-mobile">
 
@@ -350,18 +350,9 @@
                                         </div>
 
                                         <div class="filter__inner">
-                                          <div class="filter__close">
-                                            <span class="close" data-dismiss="modal"
-                                              >&times;
-                                              <!--<svg>
-                                                      <use href="./assets/images/svg-sprite/svg-sprite.svg#close"></use>
-                                                    </svg>-->
-                                            </span>
-                                          </div>
+                                
                                           <div class="filter__head bb">
 
-                                      
-                                              
                                             <div class="filter__head-title">
                                               Материал
                                       
