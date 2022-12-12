@@ -6,6 +6,30 @@
       font-size: 32px;
       line-height: 32px;
       padding: 0 16px;
+      .pc{
+        display: none;
+        @media screen and (min-width: 1024px) {
+          display: block;
+        }
+      }
+
+      .mobi{
+        @media screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
+
+      span{
+
+        font-family: 'PF Din Text Cond Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #50575A;
+        text-transform: none;
+      }
 
       @media screen and (min-width: 600px) {
         font-size: 56px;
@@ -30,24 +54,13 @@
         font-weight: 700;
         font-size: 104px;
         line-height: 104px;
+        letter-spacing: 0.04em;
 
         span{
           font-size: 24px;
           line-height: 28px;
           margin-top: 16px;
         }
-      }
-
-      span{
-        font-family: 'PF Din Text Cond Pro';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.05em;
-        color: #50575A;
-        text-transform: none;
-        margin-top: 8px;
       }
     }
   }
@@ -95,6 +108,24 @@
       @media screen and (min-width: 1600px) {
         margin-bottom: 160px;
       }
+    }
+  }
+
+  .page{
+    &__col{
+
+      @media screen and (min-width: 1024px) {
+        &:nth-child(n + 6){
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 1600px) {
+        &:nth-child(n + 5){
+          display: none;
+        }
+      }
+    
     }
   }
 }

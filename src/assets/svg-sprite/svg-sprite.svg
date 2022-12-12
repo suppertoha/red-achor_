@@ -167,8 +167,7 @@
 
   <symbol id='arrow' viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-      d="M2.17168 8.02705L9.04232 1.15641L7.97835 0.0924473L0.0353991 8.0354L1.09937 9.09937L1.10897 9.08977L8.01155 15.9924L9.07427 14.9296L2.17168 8.02705Z"
-      fill-opacity="0.4" />
+      d="M2.17168 8.02705L9.04232 1.15641L7.97835 0.0924473L0.0353991 8.0354L1.09937 9.09937L1.10897 9.08977L8.01155 15.9924L9.07427 14.9296L2.17168 8.02705Z" />
   </symbol>
 
   <symbol id='arrow-slider' viewBox="0 0 25 22" xmlns="http://www.w3.org/2000/svg">

@@ -56,6 +56,10 @@
     @media screen and (min-width: 600px) {
       margin-bottom: 80px;
     }
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 128px;
+    }
   }
 
   /*description__more-button*/
@@ -443,6 +447,7 @@
   }
   
   @media screen and (min-width: 1366px) {
+    width: 100%;
     display: block;
     height: auto;
   }
@@ -1463,7 +1468,6 @@ input[type='password'] {
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(79, 86, 89, 0.7);
-  border-top: 1px solid #ededed;
 
   @media screen and (min-width: 1920px) {
     max-width: 1920px;
@@ -1486,6 +1490,7 @@ input[type='password'] {
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
+    letter-spacing: 0.05em;
     margin: 40px 0 10px;
     color: #150f0f;
 
@@ -1504,9 +1509,9 @@ input[type='password'] {
   }
 
   &__inner {
+    background: #f5f5f5;
     display: flex;
     align-items: center;
-    background: #f5f5f5;
     padding: 10px 16px;
 
     @media screen and (min-width: 1024px) {
@@ -1555,6 +1560,36 @@ input[type='password'] {
         }
       }
     }
+  }
+
+  &--dark{
+    color: #FFFFFF;
+    margin: 4px 0 14px;
+    border-top: none;
+
+    span{
+      svg{
+        fill:#ffffff;
+      }
+    }
+
+    .site-navigation__inner{
+    background: rgba(21, 15, 15, 0.9);
+
+      @media screen and (min-width: 1024px) {
+        color: #FFFFFF;
+        background: transparent;
+      }
+    }
+
+    .site-navigation__list{
+      @media screen and (min-width: 1024px) {
+        &::before{
+          display: none;
+        }
+      }
+    }
+  
   }
 }
 

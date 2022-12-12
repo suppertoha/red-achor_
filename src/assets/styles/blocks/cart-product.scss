@@ -123,6 +123,7 @@
 /* nav-wrap */
 //! nav-wrap
 .nav-wrap{
+  margin-top: 4px;
   @media screen and (min-width: 600px) {
     margin: 4px 0 24px;
   }
@@ -212,6 +213,7 @@
       }
     }
   }
+
   .about-product{
     /* description */
     //? description
@@ -230,7 +232,6 @@
       }
     }
   }
-
 
   /* sub-categories-head__description */
   //? sub-categories-head__description
@@ -332,6 +333,7 @@
 
     &__options{
       opacity: 1;
+      margin-top: 0;
     }
   }
 

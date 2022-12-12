@@ -3,8 +3,14 @@
 // Sidebar
 
 .sidebar {
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    width: 25%;
+  }
 
     &__block {
+      width: 100%;
 
         &:not(:last-child) {
             margin-bottom: 32px;
