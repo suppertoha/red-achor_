@@ -35,7 +35,7 @@ window.addEventListener('scroll', function () {
   if (scrollY + headerHeight > startOffset) {
       element.classList.add('fixed')
       element.style.width = wrapper.clientWidth + 'px'
-      element.style.top = headerHeight + 'px'
+      element.style.top = headerHeight + 4 + 'px'
       wrapper.style.display = 'block'
       wrapper.style.paddingTop = element.clientHeight + 'px'
   } else {
